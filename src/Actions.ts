@@ -1,3 +1,4 @@
 import { createAction } from 'redux-starter-kit';
 
-export const changeFilter = createAction('changeFilter');
+export const selectDistrictFilter = createAction('selectDistrictFilter');
+export const selectYear = createAction('selectYear');
