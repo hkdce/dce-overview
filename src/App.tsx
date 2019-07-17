@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Table from 'react-bootstrap/Table';
 import Tabs from 'react-bootstrap/Tabs';
+import Map from './Map';
 import Menu from './Menu';
 
 import './App.css';
@@ -20,7 +21,7 @@ const App: React.FunctionComponent = () => {
           <Col>
             <Tabs defaultActiveKey="map" id="uncontrolled-tab-example">
               <Tab eventKey="map" title="Map">
-                <div>DIU YOU</div>
+                <Map/>
               </Tab>
               <Tab eventKey="list" title="List">
                 <Table striped bordered hover>
