@@ -6,11 +6,14 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Table from 'react-bootstrap/Table';
 import Tabs from 'react-bootstrap/Tabs';
-import Map from './Map';
+import GoogleMap from './components/GoogleMap';
+import GoogleMapOverlay from './components/GoogleMapOverlay'
 import Menu from './Menu';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
+const dcca_2019_geojson = require('./data/dcca_2019.json');
 
 const App: React.FunctionComponent = () => {
   return (
@@ -21,7 +24,11 @@ const App: React.FunctionComponent = () => {
           <Col className="thinCol">
             <Tabs defaultActiveKey="map" id="uncontrolled-tab-example">
               <Tab tabClassName="thinTab" eventKey="map" title="Map">
-                <Map/>
+                <div style={{height: "60vh"}}>
+                  <GoogleMap>
+                    <GoogleMapOverlay geojson={dcca_2019_geojson}/>
+                  </GoogleMap>
+                </div>
               </Tab>
               <Tab tabClassName="thinTab" eventKey="list" title="List">
                 <Table striped bordered hover>
@@ -67,7 +74,7 @@ const App: React.FunctionComponent = () => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className="thinCol">
             <Card>
               <Card.Header>Card Title</Card.Header>
               <Card.Body>
