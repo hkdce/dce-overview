@@ -1,14 +1,17 @@
+/// <reference types="googlemaps" />
+/// <reference types="geojson" />
+
 import React from 'react';
 import { GoogleMapContext } from './GoogleMap';
 
 declare const google: any;
 
 type State = {
-  data: any;
+  data: google.maps.Data;
 }
 
 type OwnProps = {
-  geojson: any;
+  geojson: GeoJSON.GeoJSON;
 }
 
 type Props = OwnProps;

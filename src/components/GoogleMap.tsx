@@ -1,9 +1,11 @@
+/// <reference types="googlemaps" />
+
 import React from 'react';
 
 declare const google: any;
 
 type State = {
-  map: object | null;
+  map: google.maps.Map | null;
 }
 
 type OwnProps = {
@@ -11,7 +13,7 @@ type OwnProps = {
 
 type Props = OwnProps;
 
-export const GoogleMapContext = React.createContext<object | null>(null);
+export const GoogleMapContext = React.createContext<google.maps.Map | null>(null);
 
 class GoogleMap extends React.Component<Props, State> {
   private map: any;
