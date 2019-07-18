@@ -9,8 +9,8 @@ import Tabs from 'react-bootstrap/Tabs';
 import Map from './Map';
 import Menu from './Menu';
 
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
 const App: React.FunctionComponent = () => {
   return (
@@ -18,12 +18,12 @@ const App: React.FunctionComponent = () => {
       <Menu/>
       <Container fluid={true} >
         <Row>
-          <Col>
+          <Col className="thinCol">
             <Tabs defaultActiveKey="map" id="uncontrolled-tab-example">
-              <Tab eventKey="map" title="Map">
+              <Tab tabClassName="thinTab" eventKey="map" title="Map">
                 <Map/>
               </Tab>
-              <Tab eventKey="list" title="List">
+              <Tab tabClassName="thinTab" eventKey="list" title="List">
                 <Table striped bordered hover>
                   <thead>
                     <tr>
@@ -56,7 +56,7 @@ const App: React.FunctionComponent = () => {
               </Tab>
             </Tabs>
           </Col>
-          <Col md="3">
+          <Col className="thinCol" md="3">
             <Card>
               <Card.Header>Card Title</Card.Header>
               <Card.Body>

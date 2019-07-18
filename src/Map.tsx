@@ -37,7 +37,7 @@ class Map extends React.Component<Prop, State> {
 
   render() {
 		return (
-      <div ref="mapCanvas" style={{height: "40em"}}></div>
+      <div ref="mapCanvas" style={{height: "60vh"}}></div>
 		);
 	}
 }
