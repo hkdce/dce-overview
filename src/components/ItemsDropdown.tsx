@@ -16,7 +16,7 @@ const ItemsDropdown: React.FunctionComponent<Props> = (props: Props) => {
   }
 
   return (
-    <Dropdown className={props.className} onSelect={props.onSelect}>
+    <Dropdown role="menu" className={props.className} onSelect={props.onSelect}>
       <Dropdown.Toggle size="sm" variant="info" id="dropdown-basic" onSelect={props.onSelect}>
       { props.items[props.selectedKey] }
       </Dropdown.Toggle>
