@@ -9,11 +9,13 @@ import Tabs from 'react-bootstrap/Tabs';
 import GoogleMap from './components/GoogleMap';
 import GoogleMapOverlay from './components/GoogleMapOverlay'
 import Menu from './Menu';
+import { feature } from "topojson";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-const dcca_2019_geojson = require('./data/dcca_2019.json');
+const dcca_2019_topojson: any = require('./data/dcca_2019-topo.json');
+const dcca_2019_features = dcca_2019_topojson.objects.dcca_2019.geometries.map((geo: any) => feature(dcca_2019_topojson, geo));
 
 const App: React.FunctionComponent = () => {
   return (
@@ -26,7 +28,7 @@ const App: React.FunctionComponent = () => {
               <Tab tabClassName="thinTab" eventKey="map" title="Map">
                 <div style={{height: "60vh"}}>
                   <GoogleMap>
-                    <GoogleMapOverlay geojson={dcca_2019_geojson}/>
+                    {dcca_2019_features.map((f: any) => <GoogleMapOverlay key={f.properties["CACODE"]} geojson={f}/>)}
                   </GoogleMap>
                 </div>
               </Tab>
