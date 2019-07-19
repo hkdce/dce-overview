@@ -7,7 +7,7 @@ import Tab from 'react-bootstrap/Tab';
 import Table from 'react-bootstrap/Table';
 import Tabs from 'react-bootstrap/Tabs';
 import { connect } from 'react-redux';
-import { feature } from "topojson";
+import { feature } from 'topojson';
 import GoogleMap from './components/GoogleMap';
 import GoogleMapOverlay from './components/GoogleMapOverlay';
 import Menu from './Menu';
@@ -34,17 +34,17 @@ const App: React.FunctionComponent<Props> = (props) => {
           <Col className="thinCol">
             <Tabs defaultActiveKey="map" id="selectDistrictPane">
               <Tab tabClassName="thinTab" eventKey="map" title="Map">
-                <div style={{height: "60vh"}}>
+                <div style={{ height: "60vh" }}>
                   <GoogleMap>
                     {
                       dcca_2019_features
                         .map((f: any) =>
                           <GoogleMapOverlay
-                            key={f.properties["CACODE"]}
+                            key={f.properties['CACODE']}
                             geojson={f}
-                            visible={f.properties["CACODE"].startsWith(props.districtFilter)}/>
+                            visible={f.properties['CACODE'].startsWith(props.districtFilter)} />
                         )
-                      }
+                    }
                   </GoogleMap>
                 </div>
               </Tab>

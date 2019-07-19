@@ -26,7 +26,7 @@ const Menu: React.FunctionComponent<Props> = (props: Props) => {
       <Navbar.Brand href="#home">區議會情報</Navbar.Brand>
       <Nav onSelect={(eventKey: string) => props.dispatch(selectYear(eventKey))}>
       {
-        ["2019", "2015"].map(y => <Nav.Link key={y} eventKey={y} active={ props.year === y}>{y}</Nav.Link>)
+        ['2019', '2015'].map(y => <Nav.Link key={y} eventKey={y} active={ props.year === y}>{y}</Nav.Link>)
       }
       </Nav>
       <DistrictFilter className="mr-auto"/>

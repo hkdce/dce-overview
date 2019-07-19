@@ -11,8 +11,8 @@ type Props = {
 
 const ItemsDropdown: React.FunctionComponent<Props> = (props: Props) => {
   if (!(props.selectedKey in props.items)) {
-    console.error("Selected key does not exist in items object.", props.selectedKey, props.items);
-    throw ReferenceError("Selected key does not exist in items object.");
+    console.error('Selected key does not exist in items object.', props.selectedKey, props.items);
+    throw ReferenceError('Selected key does not exist in items object.');
   }
 
   return (

@@ -7,9 +7,9 @@ import { DistricNames, ReduxState } from './Types';
 
 const districtFilterItems: DistricNames = require('./data/districts_name.json');
 for (var key in districtFilterItems) {
-  districtFilterItems[key] = key + " - " + districtFilterItems[key];
+  districtFilterItems[key] = key + ' - ' + districtFilterItems[key];
 }
-districtFilterItems[""] = "全香港";
+districtFilterItems[''] = '全香港';
 
 const districtFilterOrder = Object.keys(districtFilterItems);
 districtFilterOrder.sort();
