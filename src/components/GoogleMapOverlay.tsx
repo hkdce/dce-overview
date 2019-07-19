@@ -12,6 +12,7 @@ type State = {
 
 type OwnProps = {
   geojson: GeoJSON.GeoJSON;
+  visible: boolean;
 }
 
 type Props = OwnProps;
@@ -29,13 +30,12 @@ class GoogleMapOverlay extends React.Component<Props, State> {
   }
 
   render() {
-    this.state.data.setMap(this.context);
+    this.state.data.setMap(this.props.visible ? this.context : null);
 		return (null);
   }
 
   createDataObjectFromProp(props: Props) {
     const data = new google.maps.Data();
-    console.log(props.geojson);
     data.addGeoJson(props.geojson);
 
     return data;
