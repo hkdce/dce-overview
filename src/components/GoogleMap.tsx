@@ -1,14 +1,17 @@
 /// <reference types="googlemaps" />
 
 import React from 'react';
+import { BBox } from 'geojson';
 
 declare const google: any;
+const LatLngBounds = google.maps.LatLngBounds;
 
 type State = {
   map: google.maps.Map | null;
 }
 
 type OwnProps = {
+  panTo?: BBox;
 }
 
 type Props = OwnProps;
@@ -31,7 +34,7 @@ class GoogleMap extends React.Component<Props, State> {
 				center: { lat: 22.3300, lng: 114.1880},
 				zoom: 11,
       };
-      const map = new google.maps.Map(this.refs.mapCanvas, mapOptions);
+      const map = new google.maps.Map(this.refs.mapCanvas as Element, mapOptions);
       this.setState({map});
 		}
   }
@@ -43,6 +46,17 @@ class GoogleMap extends React.Component<Props, State> {
         <GoogleMapContext.Provider value={this.state.map}>{this.props.children}</GoogleMapContext.Provider>
       </React.Fragment>
 		);
+  }
+
+  componentDidUpdate(prevProps: Props) {
+    if (!this.props.panTo || this.props.panTo === prevProps.panTo) return;
+    this.panTo(this.props.panTo);
+  }
+
+  private panTo(bbox: BBox) {
+    if (!this.state.map) return;
+    const bounds = new LatLngBounds({lat: bbox[1], lng: bbox[0]}, {lat: bbox[3], lng: bbox[2]});
+    this.state.map.fitBounds(bounds, 0);
   }
 }
 
