@@ -36,6 +36,7 @@ class GoogleMap extends React.Component<Props, State> {
       };
       const map = new google.maps.Map(this.refs.mapCanvas as Element, mapOptions);
       this.setState({map});
+      if (this.props.panTo) this.panTo(map, this.props.panTo);
 		}
   }
 
@@ -50,13 +51,14 @@ class GoogleMap extends React.Component<Props, State> {
 
   componentDidUpdate(prevProps: Props) {
     if (!this.props.panTo || this.props.panTo === prevProps.panTo) return;
-    this.panTo(this.props.panTo);
+    if (!this.state.map) return;
+    this.panTo(this.state.map, this.props.panTo);
   }
 
-  private panTo(bbox: BBox) {
-    if (!this.state.map) return;
+  private panTo(map: google.maps.Map, bbox: BBox) {
+    console.log("PAN", bbox);
     const bounds = new LatLngBounds({lat: bbox[1], lng: bbox[0]}, {lat: bbox[3], lng: bbox[2]});
-    this.state.map.fitBounds(bounds, 0);
+    map.fitBounds(bounds, 0);
   }
 }
 
