@@ -3,8 +3,8 @@ import { ReduxState } from './Types';
 import { selectDistrictFilter, selectYear } from './Actions';
 
 export const initialState: ReduxState = {
-  districtFilter: "",
-  year: ""
+  districtFilter: '',
+  year: ''
 }
 
 const reducers = createReducer<ReduxState>(initialState, {

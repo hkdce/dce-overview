@@ -8,6 +8,7 @@ const LatLngBounds = google.maps.LatLngBounds;
 
 type State = {
   map: google.maps.Map | null;
+  lastPanTo: BBox | null;
 }
 
 type OwnProps = {
@@ -18,6 +19,10 @@ type Props = OwnProps;
 
 export const GoogleMapContext = React.createContext<google.maps.Map | null>(null);
 
+const isVisible = (e: HTMLElement): Boolean => {
+  return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+}
+
 class GoogleMap extends React.Component<Props, State> {
   private map: any;
 
@@ -25,18 +30,14 @@ class GoogleMap extends React.Component<Props, State> {
     super(props);
     this.state = {
       map: null,
+      lastPanTo: null
 		};
   }
 
   componentDidMount() {
 		if (this.state.map == null) {
-			var mapOptions = {
-				center: { lat: 22.3300, lng: 114.1880},
-				zoom: 11,
-      };
-      const map = new google.maps.Map(this.refs.mapCanvas as Element, mapOptions);
-      this.setState({map});
-      if (this.props.panTo) this.panTo(map, this.props.panTo);
+      const map = new google.maps.Map(this.refs.mapCanvas as Element);
+      this.setState({ map });
 		}
   }
 
@@ -50,13 +51,17 @@ class GoogleMap extends React.Component<Props, State> {
   }
 
   componentDidUpdate(prevProps: Props) {
-    if (!this.props.panTo || this.props.panTo === prevProps.panTo) return;
+    if (!this.props.panTo || this.props.panTo === this.state.lastPanTo) return;
     if (!this.state.map) return;
+    if (!this.refs.mapCanvas || !isVisible(this.refs.mapCanvas as HTMLElement)) return;
+
     this.panTo(this.state.map, this.props.panTo);
+    this.setState({
+      lastPanTo: this.props.panTo
+    });
   }
 
   private panTo(map: google.maps.Map, bbox: BBox) {
-    console.log("PAN", bbox);
     const bounds = new LatLngBounds({lat: bbox[1], lng: bbox[0]}, {lat: bbox[3], lng: bbox[2]});
     map.fitBounds(bounds, 0);
   }
