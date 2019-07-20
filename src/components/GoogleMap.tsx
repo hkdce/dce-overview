@@ -6,6 +6,8 @@ import { BBox } from 'geojson';
 declare const google: any;
 const LatLngBounds = google.maps.LatLngBounds;
 
+const deepEqual = require('deep-equal');
+
 type State = {
   map: google.maps.Map | null;
   lastPanTo: BBox | null;
@@ -51,7 +53,7 @@ class GoogleMap extends React.Component<Props, State> {
   }
 
   componentDidUpdate(prevProps: Props) {
-    if (!this.props.panTo || this.props.panTo === this.state.lastPanTo) return;
+    if (!this.props.panTo || deepEqual(this.props.panTo, this.state.lastPanTo)) return;
     if (!this.state.map) return;
     if (!this.refs.mapCanvas || !isVisible(this.refs.mapCanvas as HTMLElement)) return;
 
