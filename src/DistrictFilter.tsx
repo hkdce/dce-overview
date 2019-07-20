@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { selectDistrictFilter } from './Actions';
 import ItemsDropdown from './components/ItemsDropdown';
-import { DistricNames, ReduxState } from './Types';
+import { DistrictNames, ReduxState } from './Types';
+import { districtNames } from './data/Data';
 
-const districtFilterItems: DistricNames = require('./data/districts_name.json');
+const districtFilterItems: DistrictNames = Object.assign({}, districtNames);
 for (var key in districtFilterItems) {
   districtFilterItems[key] = key + ' - ' + districtFilterItems[key];
 }
