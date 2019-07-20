@@ -6,26 +6,32 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Table from 'react-bootstrap/Table';
 import Tabs from 'react-bootstrap/Tabs';
-import { connect } from 'react-redux';
 import { feature } from 'topojson';
-import GoogleMap from './components/GoogleMap';
-import GoogleMapOverlay from './components/GoogleMapOverlay';
 import Menu from './Menu';
-import { ReduxState } from './Types';
+import DistrictMap, { DistrictFeatures } from './DistrictMap';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 const dcca_2019_topojson: any = require('./data/dcca_2019-topo.json');
-const dcca_2019_features = dcca_2019_topojson.objects.dcca_2019.geometries.map((geo: any) => feature(dcca_2019_topojson, geo));
+const dcca_2019_features: GeoJSON.Feature[] = dcca_2019_topojson.objects.dcca_2019.geometries.map((geo: any) => feature(dcca_2019_topojson, geo));
 
-type StateProps = {
-  districtFilter: string
-}
+const districtFeatures: DistrictFeatures = dcca_2019_features.reduce((output, feature) => {
+  if (feature == null || feature.properties == null || !feature.properties.hasOwnProperty('CACODE')) {
+    console.warn('Bad GeoJSON feature', feature);
+    return output;
+  }
+  const caCode: string = feature.properties['CACODE'];
+  const districtCode = caCode.substring(0, 1);
+  if (output.hasOwnProperty(districtCode)) {
+    output[districtCode].push(feature);
+  } else {
+    output[districtCode] = [ feature ];
+  }
+  return output;
+}, {} as DistrictFeatures);
 
-type Props = StateProps;
-
-const App: React.FunctionComponent<Props> = (props) => {
+const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <Menu/>
@@ -35,17 +41,7 @@ const App: React.FunctionComponent<Props> = (props) => {
             <Tabs defaultActiveKey="map" id="selectDistrictPane">
               <Tab tabClassName="thinTab" eventKey="map" title="Map">
                 <div style={{ height: "60vh" }}>
-                  <GoogleMap>
-                    {
-                      dcca_2019_features
-                        .map((f: any) =>
-                          <GoogleMapOverlay
-                            key={f.properties['CACODE']}
-                            geojson={f}
-                            visible={f.properties['CACODE'].startsWith(props.districtFilter)} />
-                        )
-                    }
-                  </GoogleMap>
+                  <DistrictMap layers={districtFeatures}/>
                 </div>
               </Tab>
               <Tab tabClassName="thinTab" eventKey="list" title="List">
@@ -107,9 +103,4 @@ const App: React.FunctionComponent<Props> = (props) => {
   );
 }
 
-const mapStateToProps = (state: ReduxState): Props => {
-  return { districtFilter: state.districtFilter };
-};
-
-const ConnectedDistrictFilter = connect(mapStateToProps)(App);
-export default ConnectedDistrictFilter;
+export default App;

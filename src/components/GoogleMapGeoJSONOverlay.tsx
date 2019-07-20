@@ -11,16 +11,14 @@ type State = {
 }
 
 type OwnProps = {
-  geojson: GeoJSON.GeoJSON;
+  geojsons: GeoJSON.Feature[];
   visible: boolean;
 }
 
 type Props = OwnProps;
 
-class GoogleMapOverlay extends React.Component<Props, State> {
+class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
   static contextType = GoogleMapContext;
-
-  private map: any;
 
   constructor(props: Props) {
     super(props);
@@ -36,7 +34,9 @@ class GoogleMapOverlay extends React.Component<Props, State> {
 
   createDataObjectFromProp(props: Props) {
     const data = new google.maps.Data();
-    data.addGeoJson(props.geojson);
+    props.geojsons.forEach(geojson => {
+      data.addGeoJson(geojson);
+    });
 
     return data;
   }
@@ -46,4 +46,4 @@ class GoogleMapOverlay extends React.Component<Props, State> {
   }
 }
 
-export default GoogleMapOverlay;
+export default GoogleMapGeoJSONOverlay;
