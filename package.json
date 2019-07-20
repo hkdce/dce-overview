@@ -20,6 +20,7 @@
     "react-scripts": "3.0.1",
     "redux-query-sync": "^0.1.8",
     "redux-starter-kit": "^0.5.1",
+    "tinycolor2": "^1.4.1",
     "topojson": "^3.0.2",
     "typescript": "3.5.3"
   },

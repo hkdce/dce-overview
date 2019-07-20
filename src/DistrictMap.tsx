@@ -48,7 +48,9 @@ class DistrictMap extends React.Component<Props> {
               key={ districtCode }
               geojsons={ this.props.layers[districtCode] }
               color={ getColorFromDistrictCode(districtCode) }
-              visible={ districtCode.startsWith(this.props.districtFilter)} />
+              visible={ districtCode.startsWith(this.props.districtFilter)}
+              highlightOnMouseOver={true}
+              />
           )
         }
       </GoogleMap>
