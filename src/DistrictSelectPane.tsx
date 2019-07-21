@@ -17,7 +17,7 @@ class DistrictSelectPane extends React.Component {
     return (
       <Tabs defaultActiveKey="map" id="selectDistrictPane" onSelect={ () => this.onTabUpdate() }>
         <Tab style={{ height: "60vh" }} tabClassName="thinTab" eventKey="map" title="Map">
-          <DistrictMap ref={this.districtMapRef}/>
+          <DistrictMap ref={ this.districtMapRef }/>
         </Tab>
         <Tab tabClassName="thinTab" eventKey="list" title="List">
           <Table striped bordered hover>

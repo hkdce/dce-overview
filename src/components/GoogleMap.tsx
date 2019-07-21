@@ -6,15 +6,13 @@ import { BBox } from 'geojson';
 declare const google: any;
 const LatLngBounds = google.maps.LatLngBounds;
 
-const deepEqual = require('deep-equal');
-
 type State = {
   map: google.maps.Map | null;
-  lastPanTo: BBox | null;
+  lastPanTo: [ string, BBox ] | null;
 }
 
 type OwnProps = {
-  panTo?: BBox;
+  panTo?: [ string, BBox ]; // The first element is the pan id to avoid panning twice.
 }
 
 type Props = OwnProps;
@@ -36,7 +34,11 @@ class GoogleMap extends React.Component<Props, State> {
 
   componentDidMount() {
     if (!this.state.map) {
-      const map = new google.maps.Map(this.refs.mapCanvas as Element);
+      const mapOptions = {
+        center: { lat: 22.3300, lng: 114.1880 },
+        zoom: 11,
+      };
+      const map = new google.maps.Map(this.refs.mapCanvas as Element, mapOptions);
       this.setState({ map });
     }
   }
@@ -51,11 +53,11 @@ class GoogleMap extends React.Component<Props, State> {
   }
 
   componentDidUpdate(prevProps: Props) {
-    if (!this.props.panTo || deepEqual(this.props.panTo, this.state.lastPanTo)) return;
+    if (!this.props.panTo || (this.state.lastPanTo && this.props.panTo[0] === this.state.lastPanTo[0])) return;
     if (!this.state.map) return;
     if (!this.refs.mapCanvas || !isVisible(this.refs.mapCanvas as HTMLElement)) return;
 
-    this.panTo(this.state.map, this.props.panTo);
+    this.panTo(this.state.map, this.props.panTo[1]);
     this.setState({
       lastPanTo: this.props.panTo
     });

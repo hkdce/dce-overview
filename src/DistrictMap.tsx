@@ -53,7 +53,7 @@ class DistrictMap extends React.Component<Props> {
   render() {
     const bbox = calculateBboxOfFilteredDistrict(this.props.layers, this.props.districtFilter);
     return (
-      <GoogleMap panTo={ bbox ? bbox : undefined }>
+      <GoogleMap panTo={ bbox ? [ this.props.districtFilter, bbox ] : undefined }>
         {
           Object.keys(this.props.layers).map(districtCode =>
             <GoogleMapGeoJSONOverlay
@@ -78,7 +78,7 @@ const mapStateToProps = (state: ReduxState): StateProps => {
   return {
     page: state.page,
     districtFilter: state.district,
-    layers: districtFeatures[state.page]
+    layers: state.page === '' ? {} : districtFeatures[state.page]
   };
 };
 
