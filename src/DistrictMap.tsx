@@ -1,10 +1,12 @@
+import { BBox } from 'geojson';
 import React from 'react';
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 import GoogleMap from './components/GoogleMap';
 import GoogleMapGeoJSONOverlay from './components/GoogleMapGeoJSONOverlay';
-import { DistrictFeatures, ReduxState } from './Types';
 import { districtColors, districtFeatures2019 } from './data/Data';
-import { BBox } from 'geojson';
+import { DistrictFeatures, ReduxState } from './Types';
+import { selectDCCA } from './Actions';
 
 type StateProps = {
   districtFilter: string;
@@ -14,7 +16,11 @@ type StateProps = {
 type OwnProps = {
 }
 
-type Props = StateProps & OwnProps;
+type DispatchProps = {
+  dispatch: Dispatch;
+}
+
+type Props = StateProps & OwnProps & DispatchProps;
 
 const getColorFromDistrictCode = (districtCode: string): string => {
   var colorIndex: number = districtCode.charCodeAt(0) - 'A'.charCodeAt(0);
@@ -54,16 +60,21 @@ class DistrictMap extends React.Component<Props> {
               geojsons={ this.props.layers[districtCode] }
               color={ getColorFromDistrictCode(districtCode) }
               visible={ districtCode.startsWith(this.props.districtFilter)}
-              highlightOnMouseOver={ true }/>
+              highlightOnMouseOver={ true }
+              onFeatureClick={ this.onFeatureClick.bind(this) }/>
           )
         }
       </GoogleMap>
     );
   }
+
+  onFeatureClick(caCode: string) {
+    this.props.dispatch(selectDCCA(caCode));
+  }
 }
 
 const mapStateToProps = (state: ReduxState): StateProps => {
-  return { districtFilter: state.districtFilter, layers: districtFeatures2019 };
+  return { districtFilter: state.district, layers: districtFeatures2019 };
 };
 
 export type DistrictMapType = DistrictMap;

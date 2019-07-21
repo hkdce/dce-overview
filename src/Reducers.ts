@@ -1,15 +1,17 @@
 import { createReducer } from 'redux-starter-kit';
 import { ReduxState } from './Types';
-import { selectDistrictFilter, selectYear } from './Actions';
+import { selectDistrict, selectYear, selectDCCA } from './Actions';
 
 export const initialState: ReduxState = {
-  districtFilter: '',
-  year: ''
+  year: '',
+  district: '',
+  dcca: ''
 }
 
 const reducers = createReducer<ReduxState>(initialState, {
-  [selectDistrictFilter.type]: (state: ReduxState, action) => { state.districtFilter = action.payload },
-  [selectYear.type]: (state: ReduxState, action) => { state.year = action.payload }
+  [selectYear.type]: (state: ReduxState, action) => { state.year = action.payload },
+  [selectDistrict.type]: (state: ReduxState, action) => { state.district = action.payload },
+  [selectDCCA.type]: (state: ReduxState, action) => { state.dcca = action.payload }
 });
 
 export default reducers;

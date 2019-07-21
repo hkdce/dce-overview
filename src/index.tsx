@@ -7,7 +7,7 @@ import './index.css';
 import Reducers, { initialState } from './Reducers';
 import * as serviceWorker from './serviceWorker';
 import { ReduxState } from './Types';
-import { selectYear, selectDistrictFilter } from './Actions';
+import { selectYear, selectDistrict, selectDCCA } from './Actions';
 
 const ReduxQuerySync = require('redux-query-sync').default;
 
@@ -23,10 +23,15 @@ ReduxQuerySync({
       action: (value: string) => selectYear(value),
       defaultValue: initialState.year
     },
-    districtFilter: {
-      selector: (state: ReduxState) => state.districtFilter,
-      action: (value: string) => selectDistrictFilter(value),
-      defaultValue: initialState.districtFilter
+    district: {
+      selector: (state: ReduxState) => state.district,
+      action: (value: string) => selectDistrict(value),
+      defaultValue: initialState.district
+    },
+    dcca: {
+      selector: (state: ReduxState) => state.dcca,
+      action: (value: string) => selectDCCA(value),
+      defaultValue: initialState.dcca
     },
   },
   // Initially set the store's state to the current location.

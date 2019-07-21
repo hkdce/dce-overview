@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-import { selectDistrictFilter } from './Actions';
+import { selectDistrict } from './Actions';
 import ItemsDropdown from './components/ItemsDropdown';
 import { DistrictNames, ReduxState } from './Types';
 import { districtNames } from './data/Data';
@@ -31,15 +31,15 @@ type Props = StateProps & OwnProps & DispatchProps;
 
 const DistrictFilter: React.FunctionComponent<Props> = (props) => {
   return (<ItemsDropdown
-            className={props.className}
-            items={districtFilterItems}
-            itemOrder={districtFilterOrder}
-            selectedKey={props.selectedKey}
-            onSelect={newItemKey => props.dispatch(selectDistrictFilter(newItemKey))}/>);
+            className={ props.className }
+            items={ districtFilterItems }
+            itemOrder={ districtFilterOrder }
+            selectedKey={ props.selectedKey }
+            onSelect={ newItemKey => props.dispatch(selectDistrict(newItemKey)) }/>);
 }
 
 const mapStateToProps = (state: ReduxState) => {
-  return { selectedKey: state.districtFilter };
+  return { selectedKey: state.district };
 };
 
 const ConnectedDistrictFilter = connect(mapStateToProps)(DistrictFilter);
