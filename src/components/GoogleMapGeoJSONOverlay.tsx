@@ -47,6 +47,18 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
     this.setState({ data: null });
   }
 
+  componentDidUpdate(prevProps: Props) {
+    if (this.props.geojsons === prevProps.geojsons) return;
+    if (!this.state.data) return;
+
+    const data = this.state.data;
+    data.forEach(data.remove.bind(data));
+
+    this.props.geojsons.forEach(geojson => {
+      data.addGeoJson(geojson);
+    });
+  }
+
   render() {
     const data = this.state.data;
     if (data) {

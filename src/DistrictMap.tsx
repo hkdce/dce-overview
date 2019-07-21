@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import GoogleMap from './components/GoogleMap';
 import GoogleMapGeoJSONOverlay from './components/GoogleMapGeoJSONOverlay';
-import { districtColors, districtFeatures2019 } from './data/Data';
+import { districtColors, districtFeatures } from './data/Data';
 import { DistrictFeatures, ReduxState } from './Types';
 import { selectDCCA } from './Actions';
 
 type StateProps = {
+  page: string;
   districtFilter: string;
   layers: DistrictFeatures;
 }
@@ -74,7 +75,11 @@ class DistrictMap extends React.Component<Props> {
 }
 
 const mapStateToProps = (state: ReduxState): StateProps => {
-  return { districtFilter: state.district, layers: districtFeatures2019 };
+  return {
+    page: state.page,
+    districtFilter: state.district,
+    layers: districtFeatures[state.page]
+  };
 };
 
 export type DistrictMapType = DistrictMap;
