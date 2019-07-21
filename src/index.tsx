@@ -7,7 +7,7 @@ import './index.css';
 import Reducers, { initialState } from './Reducers';
 import * as serviceWorker from './serviceWorker';
 import { ReduxState } from './Types';
-import { selectYear, selectDistrict, selectDCCA } from './Actions';
+import { selectPage, selectDistrict, selectDCCA } from './Actions';
 
 const ReduxQuerySync = require('redux-query-sync').default;
 
@@ -18,10 +18,10 @@ const store = configureStore({
 ReduxQuerySync({
   store, // your Redux store
   params: {
-    year: {
-      selector: (state: ReduxState) => state.year,
-      action: (value: string) => selectYear(value),
-      defaultValue: initialState.year
+    page: {
+      selector: (state: ReduxState) => state.page,
+      action: (value: string) => selectPage(value),
+      defaultValue: initialState.page
     },
     district: {
       selector: (state: ReduxState) => state.district,

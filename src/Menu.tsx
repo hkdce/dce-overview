@@ -6,12 +6,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-import { selectYear } from './Actions';
+import { selectPage } from './Actions';
 import DistrictFilter from './DistrictFilter';
 import { ReduxState } from './Types';
 
 type StateProps = {
-  year: string;
+  page: string;
 }
 
 type DispatchProps = {
@@ -24,9 +24,9 @@ const Menu: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <Navbar bg="light" expand="sm">
       <Navbar.Brand href="#home">區議會情報</Navbar.Brand>
-      <Nav onSelect={(eventKey: string) => props.dispatch(selectYear(eventKey))}>
+      <Nav onSelect={(eventKey: string) => props.dispatch(selectPage(eventKey))}>
       {
-        ['2019', '2015'].map(y => <Nav.Link key={y} eventKey={y} active={ props.year === y}>{y}</Nav.Link>)
+        ['2019', '2015'].map(y => <Nav.Link key={y} eventKey={y} active={ props.page === y}>{y}</Nav.Link>)
       }
       </Nav>
       <DistrictFilter className="mr-auto"/>
@@ -44,7 +44,7 @@ const Menu: React.FunctionComponent<Props> = (props: Props) => {
 }
 
 const mapStateToProps = (state: ReduxState) => {
-  return { year: state.year };
+  return { page: state.page };
 };
 
 const ConnectedMenu = connect(mapStateToProps)(Menu);
