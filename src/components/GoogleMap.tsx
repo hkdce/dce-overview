@@ -21,13 +21,11 @@ type Props = OwnProps;
 
 export const GoogleMapContext = React.createContext<google.maps.Map | null>(null);
 
-const isVisible = (e: HTMLElement): Boolean => {
+const isVisible = (e: HTMLElement): boolean => {
   return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
 }
 
 class GoogleMap extends React.Component<Props, State> {
-  private map: any;
-
   constructor(props: Props) {
     super(props);
     this.state = {
@@ -37,10 +35,10 @@ class GoogleMap extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-		if (this.state.map == null) {
+    if (!this.state.map) {
       const map = new google.maps.Map(this.refs.mapCanvas as Element);
       this.setState({ map });
-		}
+    }
   }
 
   render() {

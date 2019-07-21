@@ -27,7 +27,7 @@ type DispatchProps = {
   dispatch: Dispatch;
 }
 
-type Props = StateProps & OwnProps & DispatchProps
+type Props = StateProps & OwnProps & DispatchProps;
 
 const DistrictFilter: React.FunctionComponent<Props> = (props) => {
   return (<ItemsDropdown

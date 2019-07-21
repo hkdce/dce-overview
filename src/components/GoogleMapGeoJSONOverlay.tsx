@@ -9,11 +9,11 @@ declare const google: any;
 const tinycolor = require('tinycolor2');
 
 type State = {
-  data: google.maps.Data;
+  data: google.maps.Data | null;
 }
 
 type OwnProps = {
-  geojsons: GeoJSON.Feature[];
+  geojsons: GeoJSON.Feature[]; // Does not support mutating after initialization.
   visible: boolean;
   color?: string;
   highlightOnMouseOver?: boolean;
@@ -27,23 +27,40 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      data: this.createDataObjectFromProp(props)
-		};
+      data: null
+    };
+  }
+
+  componentDidMount() {
+    if (!this.state.data) {
+      const data = this.createDataObjectFromProp(this.props);
+      this.setState({ data });
+    }
+  }
+
+  componentWillUnmount() {
+    if (!this.state.data) return;
+
+    this.state.data.setMap(null);
+    this.state.data.unbindAll();
+    this.setState({ data: null });
   }
 
   render() {
-    const style: google.maps.Data.StyleOptions = {
-      strokeWeight: 1.25,
-      fillOpacity: 0.3,
+    const data = this.state.data;
+    if (data) {
+      const nextMap: google.maps.Map = this.props.visible ? this.context : null;
+      if (data.getMap() !== nextMap) {
+        data.setMap(nextMap);
+      }
+      const currentStyle: google.maps.Data.StyleOptions = data.getStyle() as google.maps.Data.StyleOptions;
+      if (currentStyle.fillColor !== this.props.color) {
+        currentStyle.fillColor = this.props.color;
+        data.setStyle(currentStyle);
+      }
     }
 
-    if (this.props.color) {
-      style.fillColor = this.props.color;
-    }
-
-    this.state.data.setStyle(style);
-    this.state.data.setMap(this.props.visible ? this.context : null);
-		return (null);
+    return null;
   }
 
   createDataObjectFromProp(props: Props) {
@@ -51,28 +68,37 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
     props.geojsons.forEach(geojson => {
       data.addGeoJson(geojson);
     });
-    if (this.props.highlightOnMouseOver) {
-      data.addListener('mouseover', this.onMouseOver.bind(this));
-      data.addListener('mouseout', this.onMouseOut.bind(this));
+
+    const style: google.maps.Data.StyleOptions = {
+      strokeWeight: 1.25,
+      fillOpacity: 0.3,
     }
+    data.setStyle(style);
+
+    data.addListener('mouseover', this.onMouseOver.bind(this));
+    data.addListener('mouseout', this.onMouseOut.bind(this));
 
     return data;
   }
 
-  componentWillUnmount() {
-    this.state.data.setMap(null);
-    this.state.data.unbindAll();
-  }
-
   onMouseOver(event: google.maps.Data.MouseEvent) {
     const data = this.state.data;
-    const orgFillColor = (data.getStyle() as google.maps.Data.StyleOptions).fillColor;
-    const fillColor = tinycolor(orgFillColor).brighten(20);
-		data.overrideStyle(event.feature, { fillColor });
+    if (!data) return;
+
+    if (this.props.highlightOnMouseOver) {
+      const orgFillColor = (data.getStyle() as google.maps.Data.StyleOptions).fillColor;
+      const fillColor = tinycolor(orgFillColor).brighten(20);
+      data.overrideStyle(event.feature, { fillColor });
+    }
   }
 
   onMouseOut(event: google.maps.Data.MouseEvent) {
-    this.state.data.revertStyle(event.feature);
+    const data = this.state.data;
+    if (!data) return;
+
+    if (this.props.highlightOnMouseOver) {
+      data.revertStyle(event.feature);
+    }
   }
 }
 
