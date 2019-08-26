@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { selectPage } from './Actions';
-import DistrictFilter from './DistrictFilter';
+import DistrictSelector from './DistrictSelector';
 import { ReduxState } from './Types';
 
 type StateProps = {
@@ -29,7 +29,7 @@ const Menu: React.FunctionComponent<Props> = (props: Props) => {
         ['2019', '2015'].map(y => <Nav.Link key={y} eventKey={y} active={ props.page === y}>{y}</Nav.Link>)
       }
       </Nav>
-      <DistrictFilter className="mr-auto"/>
+      <DistrictSelector className="mr-auto"/>
     </Navbar>
   );
   /*

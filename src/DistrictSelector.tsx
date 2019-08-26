@@ -6,14 +6,14 @@ import ItemsDropdown from './components/ItemsDropdown';
 import { DistrictNames, ReduxState } from './Types';
 import { districtNames } from './data/Data';
 
-const districtFilterItems: DistrictNames = Object.assign({}, districtNames);
-for (var key in districtFilterItems) {
-  districtFilterItems[key] = key + ' - ' + districtFilterItems[key];
+const districtItems: DistrictNames = Object.assign({}, districtNames);
+for (var key in districtItems) {
+  districtItems[key] = key + ' - ' + districtItems[key];
 }
-districtFilterItems[''] = '全香港';
+districtItems[''] = '全香港';
 
-const districtFilterOrder = Object.keys(districtFilterItems);
-districtFilterOrder.sort();
+const districtItemsOrder = Object.keys(districtItems);
+districtItemsOrder.sort();
 
 type OwnProps = {
   className?: string;
@@ -29,11 +29,11 @@ type DispatchProps = {
 
 type Props = StateProps & OwnProps & DispatchProps;
 
-const DistrictFilter: React.FunctionComponent<Props> = (props) => {
+const DistrictSelector: React.FunctionComponent<Props> = (props) => {
   return (<ItemsDropdown
             className={ props.className }
-            items={ districtFilterItems }
-            itemOrder={ districtFilterOrder }
+            items={ districtItems }
+            itemOrder={ districtItemsOrder }
             selectedKey={ props.selectedKey }
             onSelect={ newItemKey => props.dispatch(selectDistrict(newItemKey)) }/>);
 }
@@ -42,5 +42,5 @@ const mapStateToProps = (state: ReduxState) => {
   return { selectedKey: state.district };
 };
 
-const ConnectedDistrictFilter = connect(mapStateToProps)(DistrictFilter);
-export default ConnectedDistrictFilter;
+const ConnectedDistrictSelector = connect(mapStateToProps)(DistrictSelector);
+export default ConnectedDistrictSelector;
