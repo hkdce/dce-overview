@@ -28,3 +28,18 @@ export const districtFeatures: { [page: string]: DistrictFeatures } = {
 };
 
 export const districtNames: DistrictNames = require('./districts_name.json');
+
+export type DCCAData = {
+  CACODE: string;
+  ENAME: string;
+  CNAME: string;
+};
+
+export type DCCAJson = {
+  [cacode: string]: DCCAData;
+}
+
+export const dccaData: { [page: string]: DCCAJson } = {
+  '2015': require('./dcca_2015.json'),
+  '2019': require('./dcca_2019.json')
+};

@@ -10,7 +10,7 @@ import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min
 
 type StateProps = {
   page: string;
-  districtFilter: string;
+  district: string;
   layers: DistrictFeatures;
   dcca: string;
 }
@@ -29,12 +29,11 @@ const tableOptions = {
   defaultSortOrder: 'asc' as SortOrder
 };
 
-
 const DistrictTable: React.FunctionComponent<Props> = (props) => {
   const features = Object.values(props.layers).flat();
-  const filteredDistrict = features
+  const selectedDistrict = features
     .map(f => f.properties)
-    .filter(p => p != null && (p['CACODE'] as string).startsWith(props.districtFilter));
+    .filter(p => p != null && (p['CACODE'] as string).startsWith(props.district));
 
   const selectRowProp: SelectRow = {
     mode: 'radio' as SelectRowMode,
@@ -45,7 +44,7 @@ const DistrictTable: React.FunctionComponent<Props> = (props) => {
   };
 
   return (
-    <BootstrapTable condensed={ true } data={ filteredDistrict as object[] } options={ tableOptions } selectRow={ selectRowProp } version='4'>
+    <BootstrapTable condensed={ true } data={ selectedDistrict as object[] } options={ tableOptions } selectRow={ selectRowProp } version='4'>
       <TableHeaderColumn isKey dataField='CACODE' dataSort={ true }>選區代號</TableHeaderColumn>
       <TableHeaderColumn dataField='CNAME' dataSort={ true }>中文名稱</TableHeaderColumn>
       <TableHeaderColumn dataField='ENAME' dataSort={ true }>English Name</TableHeaderColumn>
@@ -56,7 +55,7 @@ const DistrictTable: React.FunctionComponent<Props> = (props) => {
 const mapStateToProps = (state: ReduxState): StateProps => {
   return {
     page: state.page,
-    districtFilter: state.district,
+    district: state.district,
     layers: state.page === '' ? {} : districtFeatures[state.page],
     dcca: state.dcca
   };

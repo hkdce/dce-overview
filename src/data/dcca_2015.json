@@ -1,0 +1,2157 @@
+{
+  "Q13": {
+    "CACODE": "Q13",
+    "ENAME": "Kwan Po",
+    "CNAME": "軍寶"
+  },
+  "Q25": {
+    "CACODE": "Q25",
+    "ENAME": "Kwong Ming",
+    "CNAME": "廣明"
+  },
+  "Q14": {
+    "CACODE": "Q14",
+    "ENAME": "Nam On",
+    "CNAME": "南安"
+  },
+  "Q15": {
+    "CACODE": "Q15",
+    "ENAME": "Hong King",
+    "CNAME": "康景"
+  },
+  "Q18": {
+    "CACODE": "Q18",
+    "ENAME": "Yan Ying",
+    "CNAME": "欣英"
+  },
+  "Q17": {
+    "CACODE": "Q17",
+    "ENAME": "Po Lam",
+    "CNAME": "寶林"
+  },
+  "Q08": {
+    "CACODE": "Q08",
+    "ENAME": "Do Shin",
+    "CNAME": "都善"
+  },
+  "Q07": {
+    "CACODE": "Q07",
+    "ENAME": "Wai King",
+    "CNAME": "維景"
+  },
+  "Q03": {
+    "CACODE": "Q03",
+    "ENAME": "Sai Kung Islands",
+    "CNAME": "西貢離島"
+  },
+  "Q09": {
+    "CACODE": "Q09",
+    "ENAME": "Kin Ming",
+    "CNAME": "健明"
+  },
+  "Q06": {
+    "CACODE": "Q06",
+    "ENAME": "Po Yee",
+    "CNAME": "寶怡"
+  },
+  "Q12": {
+    "CACODE": "Q12",
+    "ENAME": "Fu Kwan",
+    "CNAME": "富君"
+  },
+  "Q23": {
+    "CACODE": "Q23",
+    "ENAME": "Tak Ming",
+    "CNAME": "德明"
+  },
+  "Q21": {
+    "CACODE": "Q21",
+    "ENAME": "Hau Tak",
+    "CNAME": "厚德"
+  },
+  "Q22": {
+    "CACODE": "Q22",
+    "ENAME": "Fu Nam",
+    "CNAME": "富藍"
+  },
+  "Q16": {
+    "CACODE": "Q16",
+    "ENAME": "Tsui Lam",
+    "CNAME": "翠林"
+  },
+  "Q10": {
+    "CACODE": "Q10",
+    "ENAME": "Choi Kin",
+    "CNAME": "彩健"
+  },
+  "Q24": {
+    "CACODE": "Q24",
+    "ENAME": "Sheung Tak",
+    "CNAME": "尚德"
+  },
+  "Q19": {
+    "CACODE": "Q19",
+    "ENAME": "Wan Hang",
+    "CNAME": "運亨"
+  },
+  "Q05": {
+    "CACODE": "Q05",
+    "ENAME": "Hang Hau West",
+    "CNAME": "坑口西"
+  },
+  "Q04": {
+    "CACODE": "Q04",
+    "ENAME": "Hang Hau East",
+    "CNAME": "坑口東"
+  },
+  "Q27": {
+    "CACODE": "Q27",
+    "ENAME": "Wan Po South",
+    "CNAME": "環保南"
+  },
+  "Q11": {
+    "CACODE": "Q11",
+    "ENAME": "O Tong",
+    "CNAME": "澳唐"
+  },
+  "Q26": {
+    "CACODE": "Q26",
+    "ENAME": "Wan Po North",
+    "CNAME": "環保北"
+  },
+  "Q20": {
+    "CACODE": "Q20",
+    "ENAME": "King Lam",
+    "CNAME": "景林"
+  },
+  "Q02": {
+    "CACODE": "Q02",
+    "ENAME": "Pak Sha Wan",
+    "CNAME": "白沙灣"
+  },
+  "Q01": {
+    "CACODE": "Q01",
+    "ENAME": "Sai Kung Central",
+    "CNAME": "西貢市中心"
+  },
+  "G17": {
+    "CACODE": "G17",
+    "ENAME": "Hok Yuen Laguna Verde",
+    "CNAME": "鶴園海逸"
+  },
+  "G23": {
+    "CACODE": "G23",
+    "ENAME": "Oi Man",
+    "CNAME": "愛民"
+  },
+  "G07": {
+    "CACODE": "G07",
+    "ENAME": "Kadoorie",
+    "CNAME": "嘉道理"
+  },
+  "G01": {
+    "CACODE": "G01",
+    "ENAME": "Ma Tau Wai",
+    "CNAME": "馬頭圍"
+  },
+  "G08": {
+    "CACODE": "G08",
+    "ENAME": "Prince",
+    "CNAME": "太子"
+  },
+  "G20": {
+    "CACODE": "G20",
+    "ENAME": "Hung Hom Bay",
+    "CNAME": "紅磡灣"
+  },
+  "G19": {
+    "CACODE": "G19",
+    "ENAME": "Whampoa West",
+    "CNAME": "黃埔西"
+  },
+  "G15": {
+    "CACODE": "G15",
+    "ENAME": "To Kwa Wan North",
+    "CNAME": "土瓜灣北"
+  },
+  "G14": {
+    "CACODE": "G14",
+    "ENAME": "Hoi Sham",
+    "CNAME": "海心"
+  },
+  "G03": {
+    "CACODE": "G03",
+    "ENAME": "Ma Tau Kok",
+    "CNAME": "馬頭角"
+  },
+  "G02": {
+    "CACODE": "G02",
+    "ENAME": "Ma Hang Chung",
+    "CNAME": "馬坑涌"
+  },
+  "G10": {
+    "CACODE": "G10",
+    "ENAME": "Lung Shing",
+    "CNAME": "龍城"
+  },
+  "G21": {
+    "CACODE": "G21",
+    "ENAME": "Hung Hom",
+    "CNAME": "紅磡"
+  },
+  "G13": {
+    "CACODE": "G13",
+    "ENAME": "Kai Tak South",
+    "CNAME": "啟德南"
+  },
+  "G05": {
+    "CACODE": "G05",
+    "ENAME": "Sheung Lok",
+    "CNAME": "常樂"
+  },
+  "G11": {
+    "CACODE": "G11",
+    "ENAME": "Sung Wong Toi",
+    "CNAME": "宋皇臺"
+  },
+  "G18": {
+    "CACODE": "G18",
+    "ENAME": "Whampoa East",
+    "CNAME": "黃埔東"
+  },
+  "G22": {
+    "CACODE": "G22",
+    "ENAME": "Ka Wai",
+    "CNAME": "家維"
+  },
+  "G12": {
+    "CACODE": "G12",
+    "ENAME": "Kai Tak North",
+    "CNAME": "啟德北"
+  },
+  "G04": {
+    "CACODE": "G04",
+    "ENAME": "Lok Man",
+    "CNAME": "樂民"
+  },
+  "G24": {
+    "CACODE": "G24",
+    "ENAME": "Oi Chun",
+    "CNAME": "愛俊"
+  },
+  "G09": {
+    "CACODE": "G09",
+    "ENAME": "Kowloon Tong",
+    "CNAME": "九龍塘"
+  },
+  "G16": {
+    "CACODE": "G16",
+    "ENAME": "To Kwa Wan South",
+    "CNAME": "土瓜灣南"
+  },
+  "G06": {
+    "CACODE": "G06",
+    "ENAME": "Ho Man Tin",
+    "CNAME": "何文田"
+  },
+  "E17": {
+    "CACODE": "E17",
+    "ENAME": "East Tsim Sha Tsui & King's Park",
+    "CNAME": "尖東及京士柏"
+  },
+  "E01": {
+    "CACODE": "E01",
+    "ENAME": "Tsim Sha Tsui West",
+    "CNAME": "尖沙咀西"
+  },
+  "E16": {
+    "CACODE": "E16",
+    "ENAME": "Yau Ma Tei North",
+    "CNAME": "油麻地北"
+  },
+  "E06": {
+    "CACODE": "E06",
+    "ENAME": "Mong Kok West",
+    "CNAME": "旺角西"
+  },
+  "E14": {
+    "CACODE": "E14",
+    "ENAME": "Mong Kok East",
+    "CNAME": "旺角東"
+  },
+  "E02": {
+    "CACODE": "E02",
+    "ENAME": "Jordan South",
+    "CNAME": "佐敦南"
+  },
+  "E05": {
+    "CACODE": "E05",
+    "ENAME": "Charming",
+    "CNAME": "富榮"
+  },
+  "E09": {
+    "CACODE": "E09",
+    "ENAME": "Cherry",
+    "CNAME": "櫻桃"
+  },
+  "E08": {
+    "CACODE": "E08",
+    "ENAME": "Olympic",
+    "CNAME": "奧運"
+  },
+  "E11": {
+    "CACODE": "E11",
+    "ENAME": "Tai Kok Tsui North",
+    "CNAME": "大角咀北"
+  },
+  "E13": {
+    "CACODE": "E13",
+    "ENAME": "Mong Kok North",
+    "CNAME": "旺角北"
+  },
+  "E19": {
+    "CACODE": "E19",
+    "ENAME": "Jordan North",
+    "CNAME": "佐敦北"
+  },
+  "E03": {
+    "CACODE": "E03",
+    "ENAME": "Jordan West",
+    "CNAME": "佐敦西"
+  },
+  "E04": {
+    "CACODE": "E04",
+    "ENAME": "Yau Ma Tei South",
+    "CNAME": "油麻地南"
+  },
+  "E10": {
+    "CACODE": "E10",
+    "ENAME": "Tai Kok Tsui South",
+    "CNAME": "大角咀南"
+  },
+  "E07": {
+    "CACODE": "E07",
+    "ENAME": "Fu Pak",
+    "CNAME": "富柏"
+  },
+  "E18": {
+    "CACODE": "E18",
+    "ENAME": "Tsim Sha Tsui Central",
+    "CNAME": "尖沙咀中"
+  },
+  "E15": {
+    "CACODE": "E15",
+    "ENAME": "Mong Kok South",
+    "CNAME": "旺角南"
+  },
+  "E12": {
+    "CACODE": "E12",
+    "ENAME": "Tai Nan",
+    "CNAME": "大南"
+  },
+  "J27": {
+    "CACODE": "J27",
+    "ENAME": "Tsui Ping",
+    "CNAME": "翠屏"
+  },
+  "J32": {
+    "CACODE": "J32",
+    "ENAME": "Ting On",
+    "CNAME": "定安"
+  },
+  "J07": {
+    "CACODE": "J07",
+    "ENAME": "Jordan Valley",
+    "CNAME": "佐敦谷"
+  },
+  "J22": {
+    "CACODE": "J22",
+    "ENAME": "Yau Lai",
+    "CNAME": "油麗"
+  },
+  "J24": {
+    "CACODE": "J24",
+    "ENAME": "Yau Tong West",
+    "CNAME": "油塘西"
+  },
+  "J23": {
+    "CACODE": "J23",
+    "ENAME": "Chui Cheung",
+    "CNAME": "翠翔"
+  },
+  "J20": {
+    "CACODE": "J20",
+    "ENAME": "Pak Nga",
+    "CNAME": "栢雅"
+  },
+  "J29": {
+    "CACODE": "J29",
+    "ENAME": "Yuet Wah",
+    "CNAME": "月華"
+  },
+  "J02": {
+    "CACODE": "J02",
+    "ENAME": "Kowloon Bay",
+    "CNAME": "九龍灣"
+  },
+  "J04": {
+    "CACODE": "J04",
+    "ENAME": "Lai Ching",
+    "CNAME": "麗晶"
+  },
+  "J05": {
+    "CACODE": "J05",
+    "ENAME": "Ping Shek",
+    "CNAME": "坪石"
+  },
+  "J09": {
+    "CACODE": "J09",
+    "ENAME": "Sheung Shun",
+    "CNAME": "雙順"
+  },
+  "J01": {
+    "CACODE": "J01",
+    "ENAME": "Kwun Tong Central",
+    "CNAME": "觀塘中心"
+  },
+  "J31": {
+    "CACODE": "J31",
+    "ENAME": "Hong Lok",
+    "CNAME": "康樂"
+  },
+  "J15": {
+    "CACODE": "J15",
+    "ENAME": "Sau Mau Ping Central",
+    "CNAME": "秀茂坪中"
+  },
+  "J30": {
+    "CACODE": "J30",
+    "ENAME": "Hip Hong",
+    "CNAME": "協康"
+  },
+  "J13": {
+    "CACODE": "J13",
+    "ENAME": "Hiu Lai",
+    "CNAME": "曉麗"
+  },
+  "J37": {
+    "CACODE": "J37",
+    "ENAME": "Lok Wah South",
+    "CNAME": "樂華南"
+  },
+  "J36": {
+    "CACODE": "J36",
+    "ENAME": "Lok Wah North",
+    "CNAME": "樂華北"
+  },
+  "J12": {
+    "CACODE": "J12",
+    "ENAME": "Sau Mau Ping North",
+    "CNAME": "秀茂坪北"
+  },
+  "J25": {
+    "CACODE": "J25",
+    "ENAME": "Laguna City",
+    "CNAME": "麗港城"
+  },
+  "J17": {
+    "CACODE": "J17",
+    "ENAME": "Lam Tin",
+    "CNAME": "藍田"
+  },
+  "J16": {
+    "CACODE": "J16",
+    "ENAME": "Hing Tin",
+    "CNAME": "興田"
+  },
+  "J11": {
+    "CACODE": "J11",
+    "ENAME": "Po Tat",
+    "CNAME": "寶達"
+  },
+  "J19": {
+    "CACODE": "J19",
+    "ENAME": "Ping Tin",
+    "CNAME": "平田"
+  },
+  "J33": {
+    "CACODE": "J33",
+    "ENAME": "Upper Ngau Tau Kok Estate",
+    "CNAME": "牛頭角上邨"
+  },
+  "J34": {
+    "CACODE": "J34",
+    "ENAME": "Lower Ngau Tau Kok Estate",
+    "CNAME": "牛頭角下邨"
+  },
+  "J26": {
+    "CACODE": "J26",
+    "ENAME": "King Tin",
+    "CNAME": "景田"
+  },
+  "J14": {
+    "CACODE": "J14",
+    "ENAME": "Sau Mau Ping South",
+    "CNAME": "秀茂坪南"
+  },
+  "J08": {
+    "CACODE": "J08",
+    "ENAME": "Shun Tin",
+    "CNAME": "順天"
+  },
+  "J10": {
+    "CACODE": "J10",
+    "ENAME": "On Lee",
+    "CNAME": "安利"
+  },
+  "J03": {
+    "CACODE": "J03",
+    "ENAME": "Kai Yip",
+    "CNAME": "啟業"
+  },
+  "J06": {
+    "CACODE": "J06",
+    "ENAME": "Sheung Choi",
+    "CNAME": "雙彩"
+  },
+  "J21": {
+    "CACODE": "J21",
+    "ENAME": "Yau Tong East",
+    "CNAME": "油塘東"
+  },
+  "J18": {
+    "CACODE": "J18",
+    "ENAME": "Kwong Tak",
+    "CNAME": "廣德"
+  },
+  "J28": {
+    "CACODE": "J28",
+    "ENAME": "Po Lok",
+    "CNAME": "寶樂"
+  },
+  "J35": {
+    "CACODE": "J35",
+    "ENAME": "To Tai",
+    "CNAME": "淘大"
+  },
+  "D04": {
+    "CACODE": "D04",
+    "ENAME": "Lei Tung I",
+    "CNAME": "利東一"
+  },
+  "D06": {
+    "CACODE": "D06",
+    "ENAME": "South Horizons East",
+    "CNAME": "海怡東"
+  },
+  "D14": {
+    "CACODE": "D14",
+    "ENAME": "Shek Yue",
+    "CNAME": "石漁"
+  },
+  "D01": {
+    "CACODE": "D01",
+    "ENAME": "Aberdeen",
+    "CNAME": "香港仔"
+  },
+  "D15": {
+    "CACODE": "D15",
+    "ENAME": "Wong Chuk Hang",
+    "CNAME": "黃竹坑"
+  },
+  "D16": {
+    "CACODE": "D16",
+    "ENAME": "Bays Area",
+    "CNAME": "海灣"
+  },
+  "D17": {
+    "CACODE": "D17",
+    "ENAME": "Stanley & Shek O",
+    "CNAME": "赤柱及石澳"
+  },
+  "D12": {
+    "CACODE": "D12",
+    "ENAME": "Chi Fu",
+    "CNAME": "置富"
+  },
+  "D11": {
+    "CACODE": "D11",
+    "ENAME": "Pokfulam",
+    "CNAME": "薄扶林"
+  },
+  "D07": {
+    "CACODE": "D07",
+    "ENAME": "South Horizons West",
+    "CNAME": "海怡西"
+  },
+  "D02": {
+    "CACODE": "D02",
+    "ENAME": "Ap Lei Chau Estate",
+    "CNAME": "鴨脷洲邨"
+  },
+  "D05": {
+    "CACODE": "D05",
+    "ENAME": "Lei Tung II",
+    "CNAME": "利東二"
+  },
+  "D08": {
+    "CACODE": "D08",
+    "ENAME": "Wah Kwai",
+    "CNAME": "華貴"
+  },
+  "D09": {
+    "CACODE": "D09",
+    "ENAME": "Wah Fu South",
+    "CNAME": "華富南"
+  },
+  "D13": {
+    "CACODE": "D13",
+    "ENAME": "Tin Wan",
+    "CNAME": "田灣"
+  },
+  "D10": {
+    "CACODE": "D10",
+    "ENAME": "Wah Fu North",
+    "CNAME": "華富北"
+  },
+  "D03": {
+    "CACODE": "D03",
+    "ENAME": "Ap Lei Chau North",
+    "CNAME": "鴨脷洲北"
+  },
+  "C33": {
+    "CACODE": "C33",
+    "ENAME": "Tsui Tak",
+    "CNAME": "翠德"
+  },
+  "C09": {
+    "CACODE": "C09",
+    "ENAME": "Yan Lam",
+    "CNAME": "欣藍"
+  },
+  "C05": {
+    "CACODE": "C05",
+    "ENAME": "Shaukeiwan",
+    "CNAME": "筲箕灣"
+  },
+  "C04": {
+    "CACODE": "C04",
+    "ENAME": "Aldrich Bay",
+    "CNAME": "愛秩序灣"
+  },
+  "C14": {
+    "CACODE": "C14",
+    "ENAME": "Mount Parker",
+    "CNAME": "柏架山"
+  },
+  "C06": {
+    "CACODE": "C06",
+    "ENAME": "A Kung Ngam",
+    "CNAME": "阿公岩"
+  },
+  "C20": {
+    "CACODE": "C20",
+    "ENAME": "Kam Ping",
+    "CNAME": "錦屏"
+  },
+  "C32": {
+    "CACODE": "C32",
+    "ENAME": "Lok Hong",
+    "CNAME": "樂康"
+  },
+  "C35": {
+    "CACODE": "C35",
+    "ENAME": "Kai Hiu",
+    "CNAME": "佳曉"
+  },
+  "C07": {
+    "CACODE": "C07",
+    "ENAME": "Heng Fa Chuen",
+    "CNAME": "杏花邨"
+  },
+  "C16": {
+    "CACODE": "C16",
+    "ENAME": "Fortress Hill",
+    "CNAME": "炮台山"
+  },
+  "C17": {
+    "CACODE": "C17",
+    "ENAME": "City Garden",
+    "CNAME": "城市花園"
+  },
+  "C03": {
+    "CACODE": "C03",
+    "ENAME": "Lei King Wan",
+    "CNAME": "鯉景灣"
+  },
+  "C02": {
+    "CACODE": "C02",
+    "ENAME": "Tai Koo Shing East",
+    "CNAME": "太古城東"
+  },
+  "C12": {
+    "CACODE": "C12",
+    "ENAME": "Wan Tsui",
+    "CNAME": "環翠"
+  },
+  "C10": {
+    "CACODE": "C10",
+    "ENAME": "Siu Sai Wan",
+    "CNAME": "小西灣"
+  },
+  "C34": {
+    "CACODE": "C34",
+    "ENAME": "Yue Wan",
+    "CNAME": "漁灣"
+  },
+  "C13": {
+    "CACODE": "C13",
+    "ENAME": "Fei Tsui",
+    "CNAME": "翡翠"
+  },
+  "C11": {
+    "CACODE": "C11",
+    "ENAME": "King Yee",
+    "CNAME": "景怡"
+  },
+  "C31": {
+    "CACODE": "C31",
+    "ENAME": "Hing Man",
+    "CNAME": "興民"
+  },
+  "C01": {
+    "CACODE": "C01",
+    "ENAME": "Tai Koo Shing West",
+    "CNAME": "太古城西"
+  },
+  "C19": {
+    "CACODE": "C19",
+    "ENAME": "Fort Street",
+    "CNAME": "堡壘"
+  },
+  "C27": {
+    "CACODE": "C27",
+    "ENAME": "Hing Tung",
+    "CNAME": "興東"
+  },
+  "C25": {
+    "CACODE": "C25",
+    "ENAME": "Kornhill",
+    "CNAME": "康怡"
+  },
+  "C28": {
+    "CACODE": "C28",
+    "ENAME": "Sai Wan Ho",
+    "CNAME": "西灣河"
+  },
+  "C24": {
+    "CACODE": "C24",
+    "ENAME": "Nam Fung",
+    "CNAME": "南豐"
+  },
+  "C26": {
+    "CACODE": "C26",
+    "ENAME": "Kornhill Garden",
+    "CNAME": "康山"
+  },
+  "C21": {
+    "CACODE": "C21",
+    "ENAME": "Tanner",
+    "CNAME": "丹拿"
+  },
+  "C18": {
+    "CACODE": "C18",
+    "ENAME": "Provident",
+    "CNAME": "和富"
+  },
+  "C22": {
+    "CACODE": "C22",
+    "ENAME": "Healthy Village",
+    "CNAME": "健康村"
+  },
+  "C23": {
+    "CACODE": "C23",
+    "ENAME": "Quarry Bay",
+    "CNAME": "鰂魚涌"
+  },
+  "C29": {
+    "CACODE": "C29",
+    "ENAME": "Lower Yiu Tung",
+    "CNAME": "下耀東"
+  },
+  "C30": {
+    "CACODE": "C30",
+    "ENAME": "Upper Yiu Tung",
+    "CNAME": "上耀東"
+  },
+  "C08": {
+    "CACODE": "C08",
+    "ENAME": "Tsui Wan",
+    "CNAME": "翠灣"
+  },
+  "C15": {
+    "CACODE": "C15",
+    "ENAME": "Braemar Hill",
+    "CNAME": "寶馬山"
+  },
+  "T08": {
+    "CACODE": "T08",
+    "ENAME": "Lamma & Po Toi",
+    "CNAME": "南丫及蒲台"
+  },
+  "T09": {
+    "CACODE": "T09",
+    "ENAME": "Cheung Chau South",
+    "CNAME": "長洲南"
+  },
+  "T10": {
+    "CACODE": "T10",
+    "ENAME": "Cheung Chau North",
+    "CNAME": "長洲北"
+  },
+  "T05": {
+    "CACODE": "T05",
+    "ENAME": "Tung Chung South",
+    "CNAME": "東涌南"
+  },
+  "T02": {
+    "CACODE": "T02",
+    "ENAME": "Yat Tung Estate North",
+    "CNAME": "逸東邨北"
+  },
+  "T04": {
+    "CACODE": "T04",
+    "ENAME": "Tung Chung North",
+    "CNAME": "東涌北"
+  },
+  "T07": {
+    "CACODE": "T07",
+    "ENAME": "Peng Chau & Hei Ling Chau",
+    "CNAME": "坪洲及喜靈洲"
+  },
+  "T06": {
+    "CACODE": "T06",
+    "ENAME": "Discovery Bay",
+    "CNAME": "愉景灣"
+  },
+  "T01": {
+    "CACODE": "T01",
+    "ENAME": "Lantau",
+    "CNAME": "大嶼山"
+  },
+  "T03": {
+    "CACODE": "T03",
+    "ENAME": "Yat Tung Estate South",
+    "CNAME": "逸東邨南"
+  },
+  "B11": {
+    "CACODE": "B11",
+    "ENAME": "Stubbs Road",
+    "CNAME": "司徒拔道"
+  },
+  "B09": {
+    "CACODE": "B09",
+    "ENAME": "Broadwood",
+    "CNAME": "樂活"
+  },
+  "B10": {
+    "CACODE": "B10",
+    "ENAME": "Happy Valley",
+    "CNAME": "跑馬地"
+  },
+  "B01": {
+    "CACODE": "B01",
+    "ENAME": "Hennessy",
+    "CNAME": "軒尼詩"
+  },
+  "B05": {
+    "CACODE": "B05",
+    "ENAME": "Tin Hau",
+    "CNAME": "天后"
+  },
+  "B12": {
+    "CACODE": "B12",
+    "ENAME": "Southorn",
+    "CNAME": "修頓"
+  },
+  "B02": {
+    "CACODE": "B02",
+    "ENAME": "Oi Kwan",
+    "CNAME": "愛群"
+  },
+  "B13": {
+    "CACODE": "B13",
+    "ENAME": "Tai Fat Hau",
+    "CNAME": "大佛口"
+  },
+  "B03": {
+    "CACODE": "B03",
+    "ENAME": "Canal Road",
+    "CNAME": "鵝頸"
+  },
+  "B04": {
+    "CACODE": "B04",
+    "ENAME": "Victoria Park",
+    "CNAME": "維園"
+  },
+  "B08": {
+    "CACODE": "B08",
+    "ENAME": "Jardine's Lookout",
+    "CNAME": "渣甸山"
+  },
+  "B07": {
+    "CACODE": "B07",
+    "ENAME": "Tai Hang",
+    "CNAME": "大坑"
+  },
+  "B06": {
+    "CACODE": "B06",
+    "ENAME": "Causeway Bay",
+    "CNAME": "銅鑼灣"
+  },
+  "A04": {
+    "CACODE": "A04",
+    "ENAME": "Peak",
+    "CNAME": "山頂"
+  },
+  "A05": {
+    "CACODE": "A05",
+    "ENAME": "University",
+    "CNAME": "大學"
+  },
+  "A14": {
+    "CACODE": "A14",
+    "ENAME": "Centre Street",
+    "CNAME": "正街"
+  },
+  "A07": {
+    "CACODE": "A07",
+    "ENAME": "Kwun Lung",
+    "CNAME": "觀龍"
+  },
+  "A10": {
+    "CACODE": "A10",
+    "ENAME": "Shek Tong Tsui",
+    "CNAME": "石塘咀"
+  },
+  "A01": {
+    "CACODE": "A01",
+    "ENAME": "Chung Wan",
+    "CNAME": "中環"
+  },
+  "A09": {
+    "CACODE": "A09",
+    "ENAME": "Belcher",
+    "CNAME": "寶翠"
+  },
+  "A12": {
+    "CACODE": "A12",
+    "ENAME": "Sheung Wan",
+    "CNAME": "上環"
+  },
+  "A11": {
+    "CACODE": "A11",
+    "ENAME": "Sai Ying Pun",
+    "CNAME": "西營盤"
+  },
+  "A08": {
+    "CACODE": "A08",
+    "ENAME": "Sai Wan",
+    "CNAME": "西環"
+  },
+  "A15": {
+    "CACODE": "A15",
+    "ENAME": "Water Street",
+    "CNAME": "水街"
+  },
+  "A03": {
+    "CACODE": "A03",
+    "ENAME": "Castle Road",
+    "CNAME": "衛城"
+  },
+  "A06": {
+    "CACODE": "A06",
+    "ENAME": "Kennedy Town & Mount Davis",
+    "CNAME": "堅摩"
+  },
+  "A02": {
+    "CACODE": "A02",
+    "ENAME": "Mid Levels East",
+    "CNAME": "半山東"
+  },
+  "A13": {
+    "CACODE": "A13",
+    "ENAME": "Tung Wah",
+    "CNAME": "東華"
+  },
+  "F08": {
+    "CACODE": "F08",
+    "ENAME": "Nam Cheong West",
+    "CNAME": "南昌西"
+  },
+  "F07": {
+    "CACODE": "F07",
+    "ENAME": "Nam Cheong Central",
+    "CNAME": "南昌中"
+  },
+  "F09": {
+    "CACODE": "F09",
+    "ENAME": "Fu Cheong",
+    "CNAME": "富昌"
+  },
+  "F04": {
+    "CACODE": "F04",
+    "ENAME": "Shek Kip Mei",
+    "CNAME": "石硤尾"
+  },
+  "F16": {
+    "CACODE": "F16",
+    "ENAME": "Lai Chi Kok Central",
+    "CNAME": "荔枝角中"
+  },
+  "F22": {
+    "CACODE": "F22",
+    "ENAME": "Nam Shan, Tai Hang Tung & Tai Hang Sai",
+    "CNAME": "南山、大坑東及大坑西"
+  },
+  "F14": {
+    "CACODE": "F14",
+    "ENAME": "Mei Foo Central",
+    "CNAME": "美孚中"
+  },
+  "F10": {
+    "CACODE": "F10",
+    "ENAME": "Lai Kok",
+    "CNAME": "麗閣"
+  },
+  "F15": {
+    "CACODE": "F15",
+    "ENAME": "Mei Foo North",
+    "CNAME": "美孚北"
+  },
+  "F19": {
+    "CACODE": "F19",
+    "ENAME": "Lei Cheng Uk",
+    "CNAME": "李鄭屋"
+  },
+  "F20": {
+    "CACODE": "F20",
+    "ENAME": "Ha Pak Tin",
+    "CNAME": "下白田"
+  },
+  "F01": {
+    "CACODE": "F01",
+    "ENAME": "Po Lai",
+    "CNAME": "寶麗"
+  },
+  "F21": {
+    "CACODE": "F21",
+    "ENAME": "Yau Yat Tsuen",
+    "CNAME": "又一村"
+  },
+  "F23": {
+    "CACODE": "F23",
+    "ENAME": "Lung Ping & Sheung Pak Tin",
+    "CNAME": "龍坪及上白田"
+  },
+  "F12": {
+    "CACODE": "F12",
+    "ENAME": "Lai Chi Kok South",
+    "CNAME": "荔枝角南"
+  },
+  "F18": {
+    "CACODE": "F18",
+    "ENAME": "Un Chau & So Uk",
+    "CNAME": "元州及蘇屋"
+  },
+  "F05": {
+    "CACODE": "F05",
+    "ENAME": "Nam Cheong East",
+    "CNAME": "南昌東"
+  },
+  "F06": {
+    "CACODE": "F06",
+    "ENAME": "Nam Cheong South",
+    "CNAME": "南昌南"
+  },
+  "F03": {
+    "CACODE": "F03",
+    "ENAME": "Nam Cheong North",
+    "CNAME": "南昌北"
+  },
+  "F13": {
+    "CACODE": "F13",
+    "ENAME": "Mei Foo South",
+    "CNAME": "美孚南"
+  },
+  "F02": {
+    "CACODE": "F02",
+    "ENAME": "Cheung Sha Wan",
+    "CNAME": "長沙灣"
+  },
+  "F17": {
+    "CACODE": "F17",
+    "ENAME": "Lai Chi Kok North",
+    "CNAME": "荔枝角北"
+  },
+  "F11": {
+    "CACODE": "F11",
+    "ENAME": "Fortune",
+    "CNAME": "幸福"
+  },
+  "M05": {
+    "CACODE": "M05",
+    "ENAME": "Yuen Long Centre",
+    "CNAME": "元朗中心"
+  },
+  "M04": {
+    "CACODE": "M04",
+    "ENAME": "Pek Long",
+    "CNAME": "北朗"
+  },
+  "M16": {
+    "CACODE": "M16",
+    "ENAME": "Shui Oi",
+    "CNAME": "瑞愛"
+  },
+  "M29": {
+    "CACODE": "M29",
+    "ENAME": "Kingswood South",
+    "CNAME": "嘉湖南"
+  },
+  "M25": {
+    "CACODE": "M25",
+    "ENAME": "Kingswood North",
+    "CNAME": "嘉湖北"
+  },
+  "M03": {
+    "CACODE": "M03",
+    "ENAME": "Nam Ping",
+    "CNAME": "南屏"
+  },
+  "M18": {
+    "CACODE": "M18",
+    "ENAME": "Chung Wah",
+    "CNAME": "頌華"
+  },
+  "M21": {
+    "CACODE": "M21",
+    "ENAME": "Yat Chak",
+    "CNAME": "逸澤"
+  },
+  "M34": {
+    "CACODE": "M34",
+    "ENAME": "Pat Heung North",
+    "CNAME": "八鄉北"
+  },
+  "M14": {
+    "CACODE": "M14",
+    "ENAME": "Ha Tsuen",
+    "CNAME": "廈村"
+  },
+  "M31": {
+    "CACODE": "M31",
+    "ENAME": "Fairview Park",
+    "CNAME": "錦綉花園"
+  },
+  "M13": {
+    "CACODE": "M13",
+    "ENAME": "Ping Shan North",
+    "CNAME": "屏山北"
+  },
+  "M32": {
+    "CACODE": "M32",
+    "ENAME": "San Tin",
+    "CNAME": "新田"
+  },
+  "M19": {
+    "CACODE": "M19",
+    "ENAME": "Yuet Yan",
+    "CNAME": "悅恩"
+  },
+  "M22": {
+    "CACODE": "M22",
+    "ENAME": "Tin Heng",
+    "CNAME": "天恒"
+  },
+  "M10": {
+    "CACODE": "M10",
+    "ENAME": "Shap Pat Heung West",
+    "CNAME": "十八鄉西"
+  },
+  "M09": {
+    "CACODE": "M09",
+    "ENAME": "Shap Pat Heung Central",
+    "CNAME": "十八鄉中"
+  },
+  "M11": {
+    "CACODE": "M11",
+    "ENAME": "Ping Shan South",
+    "CNAME": "屏山南"
+  },
+  "M28": {
+    "CACODE": "M28",
+    "ENAME": "Tin Yiu",
+    "CNAME": "天耀"
+  },
+  "M26": {
+    "CACODE": "M26",
+    "ENAME": "Tsz Yau",
+    "CNAME": "慈祐"
+  },
+  "M08": {
+    "CACODE": "M08",
+    "ENAME": "Shap Pat Heung East",
+    "CNAME": "十八鄉東"
+  },
+  "M12": {
+    "CACODE": "M12",
+    "ENAME": "Ping Shan Central",
+    "CNAME": "屏山中"
+  },
+  "M33": {
+    "CACODE": "M33",
+    "ENAME": "Kam Tin",
+    "CNAME": "錦田"
+  },
+  "M06": {
+    "CACODE": "M06",
+    "ENAME": "Yuen Lung",
+    "CNAME": "元龍"
+  },
+  "M15": {
+    "CACODE": "M15",
+    "ENAME": "Tin Shing",
+    "CNAME": "天盛"
+  },
+  "M27": {
+    "CACODE": "M27",
+    "ENAME": "Yiu Yau",
+    "CNAME": "耀祐"
+  },
+  "M17": {
+    "CACODE": "M17",
+    "ENAME": "Shui Wah",
+    "CNAME": "瑞華"
+  },
+  "M20": {
+    "CACODE": "M20",
+    "ENAME": "Fu Yan",
+    "CNAME": "富恩"
+  },
+  "M24": {
+    "CACODE": "M24",
+    "ENAME": "Ching King",
+    "CNAME": "晴景"
+  },
+  "M23": {
+    "CACODE": "M23",
+    "ENAME": "Wang Yat",
+    "CNAME": "宏逸"
+  },
+  "M35": {
+    "CACODE": "M35",
+    "ENAME": "Pat Heung South",
+    "CNAME": "八鄉南"
+  },
+  "M30": {
+    "CACODE": "M30",
+    "ENAME": "Chung Pak",
+    "CNAME": "頌栢"
+  },
+  "M07": {
+    "CACODE": "M07",
+    "ENAME": "Fung Cheung",
+    "CNAME": "鳳翔"
+  },
+  "M01": {
+    "CACODE": "M01",
+    "ENAME": "Fung Nin",
+    "CNAME": "豐年"
+  },
+  "M02": {
+    "CACODE": "M02",
+    "ENAME": "Shui Pin",
+    "CNAME": "水邊"
+  },
+  "P12": {
+    "CACODE": "P12",
+    "ENAME": "San Fu",
+    "CNAME": "新富"
+  },
+  "P01": {
+    "CACODE": "P01",
+    "ENAME": "Tai Po Hui",
+    "CNAME": "大埔墟"
+  },
+  "P08": {
+    "CACODE": "P08",
+    "ENAME": "Kwong Fuk & Plover Cove",
+    "CNAME": "廣福及寶湖"
+  },
+  "P07": {
+    "CACODE": "P07",
+    "ENAME": "Fu Ming Sun",
+    "CNAME": "富明新"
+  },
+  "P16": {
+    "CACODE": "P16",
+    "ENAME": "Old Market & Serenity",
+    "CNAME": "舊墟及太湖"
+  },
+  "P06": {
+    "CACODE": "P06",
+    "ENAME": "Yee Fu",
+    "CNAME": "怡富"
+  },
+  "P03": {
+    "CACODE": "P03",
+    "ENAME": "Chung Ting",
+    "CNAME": "頌汀"
+  },
+  "P15": {
+    "CACODE": "P15",
+    "ENAME": "Tai Wo",
+    "CNAME": "太和"
+  },
+  "P02": {
+    "CACODE": "P02",
+    "ENAME": "Tai Po Central",
+    "CNAME": "大埔中"
+  },
+  "P04": {
+    "CACODE": "P04",
+    "ENAME": "Tai Yuen",
+    "CNAME": "大元"
+  },
+  "P13": {
+    "CACODE": "P13",
+    "ENAME": "Lam Tsuen Valley",
+    "CNAME": "林村谷"
+  },
+  "P17": {
+    "CACODE": "P17",
+    "ENAME": "Hong Lok Yuen",
+    "CNAME": "康樂園"
+  },
+  "P19": {
+    "CACODE": "P19",
+    "ENAME": "Sai Kung North",
+    "CNAME": "西貢北"
+  },
+  "P18": {
+    "CACODE": "P18",
+    "ENAME": "Shuen Wan",
+    "CNAME": "船灣"
+  },
+  "P10": {
+    "CACODE": "P10",
+    "ENAME": "Tai Po Kau",
+    "CNAME": "大埔滘"
+  },
+  "P09": {
+    "CACODE": "P09",
+    "ENAME": "Wang Fuk",
+    "CNAME": "宏福"
+  },
+  "P14": {
+    "CACODE": "P14",
+    "ENAME": "Po Nga",
+    "CNAME": "寶雅"
+  },
+  "P05": {
+    "CACODE": "P05",
+    "ENAME": "Fu Heng",
+    "CNAME": "富亨"
+  },
+  "P11": {
+    "CACODE": "P11",
+    "ENAME": "Wan Tau Tong",
+    "CNAME": "運頭塘"
+  },
+  "N06": {
+    "CACODE": "N06",
+    "ENAME": "Yan Shing",
+    "CNAME": "欣盛"
+  },
+  "N08": {
+    "CACODE": "N08",
+    "ENAME": "Fanling South",
+    "CNAME": "粉嶺南"
+  },
+  "N10": {
+    "CACODE": "N10",
+    "ENAME": "Yu Tai",
+    "CNAME": "御太"
+  },
+  "N18": {
+    "CACODE": "N18",
+    "ENAME": "Queen's Hill",
+    "CNAME": "皇后山"
+  },
+  "N11": {
+    "CACODE": "N11",
+    "ENAME": "Sheung Shui Rural",
+    "CNAME": "上水鄉郊"
+  },
+  "N07": {
+    "CACODE": "N07",
+    "ENAME": "Shing Fuk",
+    "CNAME": "盛褔"
+  },
+  "N12": {
+    "CACODE": "N12",
+    "ENAME": "Choi Yuen",
+    "CNAME": "彩園"
+  },
+  "N05": {
+    "CACODE": "N05",
+    "ENAME": "Wah Ming",
+    "CNAME": "華明"
+  },
+  "N03": {
+    "CACODE": "N03",
+    "ENAME": "Cheung Wah",
+    "CNAME": "祥華"
+  },
+  "N09": {
+    "CACODE": "N09",
+    "ENAME": "Ching Ho",
+    "CNAME": "清河"
+  },
+  "N16": {
+    "CACODE": "N16",
+    "ENAME": "Sha Ta",
+    "CNAME": "沙打"
+  },
+  "N14": {
+    "CACODE": "N14",
+    "ENAME": "Tin Ping West",
+    "CNAME": "天平西"
+  },
+  "N04": {
+    "CACODE": "N04",
+    "ENAME": "Wah Do",
+    "CNAME": "華都"
+  },
+  "N01": {
+    "CACODE": "N01",
+    "ENAME": "Luen Wo Hui",
+    "CNAME": "聯和墟"
+  },
+  "N02": {
+    "CACODE": "N02",
+    "ENAME": "Fanling Town",
+    "CNAME": "粉嶺市"
+  },
+  "N17": {
+    "CACODE": "N17",
+    "ENAME": "Tin Ping East",
+    "CNAME": "天平東"
+  },
+  "N13": {
+    "CACODE": "N13",
+    "ENAME": "Shek Wu Hui",
+    "CNAME": "石湖墟"
+  },
+  "N15": {
+    "CACODE": "N15",
+    "ENAME": "Fung Tsui",
+    "CNAME": "鳳翠"
+  },
+  "H22": {
+    "CACODE": "H22",
+    "ENAME": "Choi Wan South",
+    "CNAME": "彩雲南"
+  },
+  "H08": {
+    "CACODE": "H08",
+    "ENAME": "Tung Tau",
+    "CNAME": "東頭"
+  },
+  "H09": {
+    "CACODE": "H09",
+    "ENAME": "Tung Mei",
+    "CNAME": "東美"
+  },
+  "H07": {
+    "CACODE": "H07",
+    "ENAME": "San Po Kong",
+    "CNAME": "新蒲崗"
+  },
+  "H23": {
+    "CACODE": "H23",
+    "ENAME": "Choi Wan West",
+    "CNAME": "彩雲西"
+  },
+  "H10": {
+    "CACODE": "H10",
+    "ENAME": "Lok Fu",
+    "CNAME": "樂富"
+  },
+  "H02": {
+    "CACODE": "H02",
+    "ENAME": "Lung Ha",
+    "CNAME": "龍下"
+  },
+  "H12": {
+    "CACODE": "H12",
+    "ENAME": "Tin Keung",
+    "CNAME": "天強"
+  },
+  "H19": {
+    "CACODE": "H19",
+    "ENAME": "Tsz Wan East",
+    "CNAME": "慈雲東"
+  },
+  "H25": {
+    "CACODE": "H25",
+    "ENAME": "Choi Hung",
+    "CNAME": "彩虹"
+  },
+  "H11": {
+    "CACODE": "H11",
+    "ENAME": "Wang Tau Hom",
+    "CNAME": "橫頭磡"
+  },
+  "H05": {
+    "CACODE": "H05",
+    "ENAME": "Fung Tak",
+    "CNAME": "鳳德"
+  },
+  "H15": {
+    "CACODE": "H15",
+    "ENAME": "Chuk Yuen North",
+    "CNAME": "竹園北"
+  },
+  "H03": {
+    "CACODE": "H03",
+    "ENAME": "Lung Sheung",
+    "CNAME": "龍上"
+  },
+  "H14": {
+    "CACODE": "H14",
+    "ENAME": "Chuk Yuen South",
+    "CNAME": "竹園南"
+  },
+  "H06": {
+    "CACODE": "H06",
+    "ENAME": "Lung Sing",
+    "CNAME": "龍星"
+  },
+  "H04": {
+    "CACODE": "H04",
+    "ENAME": "Fung Wong",
+    "CNAME": "鳳凰"
+  },
+  "H20": {
+    "CACODE": "H20",
+    "ENAME": "King Fu",
+    "CNAME": "瓊富"
+  },
+  "H16": {
+    "CACODE": "H16",
+    "ENAME": "Tsz Wan West",
+    "CNAME": "慈雲西"
+  },
+  "H13": {
+    "CACODE": "H13",
+    "ENAME": "Tsui Chuk & Pang Ching",
+    "CNAME": "翠竹及鵬程"
+  },
+  "H17": {
+    "CACODE": "H17",
+    "ENAME": "Ching Oi",
+    "CNAME": "正愛"
+  },
+  "H21": {
+    "CACODE": "H21",
+    "ENAME": "Choi Wan East",
+    "CNAME": "彩雲東"
+  },
+  "H01": {
+    "CACODE": "H01",
+    "ENAME": "Lung Tsui",
+    "CNAME": "龍趣"
+  },
+  "H18": {
+    "CACODE": "H18",
+    "ENAME": "Ching On",
+    "CNAME": "正安"
+  },
+  "H24": {
+    "CACODE": "H24",
+    "ENAME": "Chi Choi",
+    "CNAME": "池彩"
+  },
+  "S02": {
+    "CACODE": "S02",
+    "ENAME": "Kwai Shing East Estate",
+    "CNAME": "葵盛東邨"
+  },
+  "S18": {
+    "CACODE": "S18",
+    "ENAME": "Kwai Shing West Estate",
+    "CNAME": "葵盛西邨"
+  },
+  "S12": {
+    "CACODE": "S12",
+    "ENAME": "Kwai Fong",
+    "CNAME": "葵芳"
+  },
+  "S01": {
+    "CACODE": "S01",
+    "ENAME": "Kwai Hing",
+    "CNAME": "葵興"
+  },
+  "S09": {
+    "CACODE": "S09",
+    "ENAME": "Shek Lei South",
+    "CNAME": "石籬南"
+  },
+  "S11": {
+    "CACODE": "S11",
+    "ENAME": "Tai Pak Tin",
+    "CNAME": "大白田"
+  },
+  "S03": {
+    "CACODE": "S03",
+    "ENAME": "Upper Tai Wo Hau",
+    "CNAME": "上大窩口"
+  },
+  "S10": {
+    "CACODE": "S10",
+    "ENAME": "Shek Lei Norh",
+    "CNAME": "石籬北"
+  },
+  "S04": {
+    "CACODE": "S04",
+    "ENAME": "Lower Tai Wo Hau",
+    "CNAME": "下大窩口"
+  },
+  "S07": {
+    "CACODE": "S07",
+    "ENAME": "Shek Yam",
+    "CNAME": "石蔭"
+  },
+  "S14": {
+    "CACODE": "S14",
+    "ENAME": "Lai Wah",
+    "CNAME": "荔華"
+  },
+  "S26": {
+    "CACODE": "S26",
+    "ENAME": "Tsing Yi South",
+    "CNAME": "青衣南"
+  },
+  "S21": {
+    "CACODE": "S21",
+    "ENAME": "Tsing Yi Estate",
+    "CNAME": "青衣邨"
+  },
+  "S25": {
+    "CACODE": "S25",
+    "ENAME": "Shing Hong",
+    "CNAME": "盛康"
+  },
+  "S20": {
+    "CACODE": "S20",
+    "ENAME": "Wai Ying",
+    "CNAME": "偉盈"
+  },
+  "S23": {
+    "CACODE": "S23",
+    "ENAME": "Cheung Ching",
+    "CNAME": "長青"
+  },
+  "S24": {
+    "CACODE": "S24",
+    "ENAME": "Cheung Hong",
+    "CNAME": "長康"
+  },
+  "S15": {
+    "CACODE": "S15",
+    "ENAME": "Cho Yiu",
+    "CNAME": "祖堯"
+  },
+  "S17": {
+    "CACODE": "S17",
+    "ENAME": "Lai King",
+    "CNAME": "荔景"
+  },
+  "S29": {
+    "CACODE": "S29",
+    "ENAME": "Cheung On",
+    "CNAME": "長安"
+  },
+  "S19": {
+    "CACODE": "S19",
+    "ENAME": "On Ho",
+    "CNAME": "安灝"
+  },
+  "S06": {
+    "CACODE": "S06",
+    "ENAME": "Kwai Chung Estate South",
+    "CNAME": "葵涌邨南"
+  },
+  "S05": {
+    "CACODE": "S05",
+    "ENAME": "Kwai Chung Estate North",
+    "CNAME": "葵涌邨北"
+  },
+  "S13": {
+    "CACODE": "S13",
+    "ENAME": "Wah Lai",
+    "CNAME": "華麗"
+  },
+  "S16": {
+    "CACODE": "S16",
+    "ENAME": "Hing Fong",
+    "CNAME": "興芳"
+  },
+  "S08": {
+    "CACODE": "S08",
+    "ENAME": "On Yam",
+    "CNAME": "安蔭"
+  },
+  "S22": {
+    "CACODE": "S22",
+    "ENAME": "Greenfield",
+    "CNAME": "翠怡"
+  },
+  "S28": {
+    "CACODE": "S28",
+    "ENAME": "Ching Fat",
+    "CNAME": "青發"
+  },
+  "S27": {
+    "CACODE": "S27",
+    "ENAME": "Cheung Hang",
+    "CNAME": "長亨"
+  },
+  "R16": {
+    "CACODE": "R16",
+    "ENAME": "Keng Hau",
+    "CNAME": "徑口"
+  },
+  "R17": {
+    "CACODE": "R17",
+    "ENAME": "Tin Sum",
+    "CNAME": "田心"
+  },
+  "R18": {
+    "CACODE": "R18",
+    "ENAME": "Chui Ka",
+    "CNAME": "翠嘉"
+  },
+  "R07": {
+    "CACODE": "R07",
+    "ENAME": "Sha Kok",
+    "CNAME": "沙角"
+  },
+  "R10": {
+    "CACODE": "R10",
+    "ENAME": "Chun Fung",
+    "CNAME": "秦豐"
+  },
+  "R19": {
+    "CACODE": "R19",
+    "ENAME": "Tai Wai",
+    "CNAME": "大圍"
+  },
+  "R38": {
+    "CACODE": "R38",
+    "ENAME": "Kwong Yuen",
+    "CNAME": "廣源"
+  },
+  "R36": {
+    "CACODE": "R36",
+    "ENAME": "Bik Woo",
+    "CNAME": "碧湖"
+  },
+  "R21": {
+    "CACODE": "R21",
+    "ENAME": "Sui Wo",
+    "CNAME": "穗禾"
+  },
+  "R35": {
+    "CACODE": "R35",
+    "ENAME": "Yu Yan",
+    "CNAME": "愉欣"
+  },
+  "R22": {
+    "CACODE": "R22",
+    "ENAME": "Fo Tan",
+    "CNAME": "火炭"
+  },
+  "R31": {
+    "CACODE": "R31",
+    "ENAME": "Yiu On",
+    "CNAME": "耀安"
+  },
+  "R34": {
+    "CACODE": "R34",
+    "ENAME": "Tai Shui Hang",
+    "CNAME": "大水坑"
+  },
+  "R23": {
+    "CACODE": "R23",
+    "ENAME": "Chun Ma",
+    "CNAME": "駿馬"
+  },
+  "R33": {
+    "CACODE": "R33",
+    "ENAME": "On Tai",
+    "CNAME": "鞍泰"
+  },
+  "R25": {
+    "CACODE": "R25",
+    "ENAME": "Kam To",
+    "CNAME": "錦濤"
+  },
+  "R05": {
+    "CACODE": "R05",
+    "ENAME": "Yue Shing",
+    "CNAME": "愉城"
+  },
+  "R03": {
+    "CACODE": "R03",
+    "ENAME": "Wo Che Estate",
+    "CNAME": "禾輋邨"
+  },
+  "R32": {
+    "CACODE": "R32",
+    "ENAME": "Heng On",
+    "CNAME": "恒安"
+  },
+  "R26": {
+    "CACODE": "R26",
+    "ENAME": "Ma On Shan Town Centre",
+    "CNAME": "馬鞍山市中心"
+  },
+  "R12": {
+    "CACODE": "R12",
+    "ENAME": "Chui Tin",
+    "CNAME": "翠田"
+  },
+  "R11": {
+    "CACODE": "R11",
+    "ENAME": "Sun Tin Wai",
+    "CNAME": "新田圍"
+  },
+  "R08": {
+    "CACODE": "R08",
+    "ENAME": "Pok Hong",
+    "CNAME": "博康"
+  },
+  "R14": {
+    "CACODE": "R14",
+    "ENAME": "Lower Shing Mun",
+    "CNAME": "下城門"
+  },
+  "R09": {
+    "CACODE": "R09",
+    "ENAME": "Jat Min",
+    "CNAME": "乙明"
+  },
+  "R04": {
+    "CACODE": "R04",
+    "ENAME": "City One",
+    "CNAME": "第一城"
+  },
+  "R20": {
+    "CACODE": "R20",
+    "ENAME": "Chung Tin",
+    "CNAME": "松田"
+  },
+  "R01": {
+    "CACODE": "R01",
+    "ENAME": "Sha Tin Town Centre",
+    "CNAME": "沙田市中心"
+  },
+  "R37": {
+    "CACODE": "R37",
+    "ENAME": "Kwong Hong",
+    "CNAME": "廣康"
+  },
+  "R02": {
+    "CACODE": "R02",
+    "ENAME": "Lek Yuen",
+    "CNAME": "瀝源"
+  },
+  "R24": {
+    "CACODE": "R24",
+    "ENAME": "Chung On",
+    "CNAME": "頌安"
+  },
+  "R30": {
+    "CACODE": "R30",
+    "ENAME": "Kam Ying",
+    "CNAME": "錦英"
+  },
+  "R28": {
+    "CACODE": "R28",
+    "ENAME": "Fu Lung",
+    "CNAME": "富龍"
+  },
+  "R27": {
+    "CACODE": "R27",
+    "ENAME": "Lee On",
+    "CNAME": "利安"
+  },
+  "R29": {
+    "CACODE": "R29",
+    "ENAME": "Wu Kai Sha",
+    "CNAME": "烏溪沙"
+  },
+  "R15": {
+    "CACODE": "R15",
+    "ENAME": "Wan Shing",
+    "CNAME": "雲城"
+  },
+  "R13": {
+    "CACODE": "R13",
+    "ENAME": "Hin Ka",
+    "CNAME": "顯嘉"
+  },
+  "R06": {
+    "CACODE": "R06",
+    "ENAME": "Wong Uk",
+    "CNAME": "王屋"
+  },
+  "K02": {
+    "CACODE": "K02",
+    "ENAME": "Yeung Uk Road",
+    "CNAME": "楊屋道"
+  },
+  "K01": {
+    "CACODE": "K01",
+    "ENAME": "Tak Wah",
+    "CNAME": "德華"
+  },
+  "K03": {
+    "CACODE": "K03",
+    "ENAME": "Hoi Bun",
+    "CNAME": "海濱"
+  },
+  "K11": {
+    "CACODE": "K11",
+    "ENAME": "Tsuen Wan West",
+    "CNAME": "荃灣西"
+  },
+  "K07": {
+    "CACODE": "K07",
+    "ENAME": "Tsuen Wan Centre",
+    "CNAME": "荃灣中心"
+  },
+  "K15": {
+    "CACODE": "K15",
+    "ENAME": "Lei Muk Shue East",
+    "CNAME": "梨木樹東"
+  },
+  "K10": {
+    "CACODE": "K10",
+    "ENAME": "Ting Sham",
+    "CNAME": "汀深"
+  },
+  "K08": {
+    "CACODE": "K08",
+    "ENAME": "Allway",
+    "CNAME": "荃威"
+  },
+  "K17": {
+    "CACODE": "K17",
+    "ENAME": "Shek Wai Kok",
+    "CNAME": "石圍角"
+  },
+  "K05": {
+    "CACODE": "K05",
+    "ENAME": "Fuk Loi",
+    "CNAME": "福來"
+  },
+  "K13": {
+    "CACODE": "K13",
+    "ENAME": "Ma Wan",
+    "CNAME": "馬灣"
+  },
+  "K04": {
+    "CACODE": "K04",
+    "ENAME": "Clague Garden",
+    "CNAME": "祈德尊"
+  },
+  "K12": {
+    "CACODE": "K12",
+    "ENAME": "Tsuen Wan Rural",
+    "CNAME": "荃灣郊區"
+  },
+  "K06": {
+    "CACODE": "K06",
+    "ENAME": "Discovery Park",
+    "CNAME": "愉景"
+  },
+  "K14": {
+    "CACODE": "K14",
+    "ENAME": "Luk Yeung",
+    "CNAME": "綠楊"
+  },
+  "K18": {
+    "CACODE": "K18",
+    "ENAME": "Cheung Shek",
+    "CNAME": "象石"
+  },
+  "K09": {
+    "CACODE": "K09",
+    "ENAME": "Lai To",
+    "CNAME": "麗濤"
+  },
+  "K16": {
+    "CACODE": "K16",
+    "ENAME": "Lei Muk Shue West",
+    "CNAME": "梨木樹西"
+  },
+  "L16": {
+    "CACODE": "L16",
+    "ENAME": "Siu Hei",
+    "CNAME": "兆禧"
+  },
+  "L15": {
+    "CACODE": "L15",
+    "ENAME": "Yuet Wu",
+    "CNAME": "悅湖"
+  },
+  "L04": {
+    "CACODE": "L04",
+    "ENAME": "On Ting",
+    "CNAME": "安定"
+  },
+  "L12": {
+    "CACODE": "L12",
+    "ENAME": "Sam Shing",
+    "CNAME": "三聖"
+  },
+  "L27": {
+    "CACODE": "L27",
+    "ENAME": "Prime View",
+    "CNAME": "景峰"
+  },
+  "L11": {
+    "CACODE": "L11",
+    "ENAME": "San Hui",
+    "CNAME": "新墟"
+  },
+  "L19": {
+    "CACODE": "L19",
+    "ENAME": "Lok Tsui",
+    "CNAME": "樂翠"
+  },
+  "L29": {
+    "CACODE": "L29",
+    "ENAME": "Tuen Mun Rural",
+    "CNAME": "屯門鄉郊"
+  },
+  "L24": {
+    "CACODE": "L24",
+    "ENAME": "Po Tin",
+    "CNAME": "寶田"
+  },
+  "L10": {
+    "CACODE": "L10",
+    "ENAME": "Hing Tsak",
+    "CNAME": "興澤"
+  },
+  "L08": {
+    "CACODE": "L08",
+    "ENAME": "Shan King",
+    "CNAME": "山景"
+  },
+  "L09": {
+    "CACODE": "L09",
+    "ENAME": "King Hing",
+    "CNAME": "景興"
+  },
+  "L18": {
+    "CACODE": "L18",
+    "ENAME": "Butterfly",
+    "CNAME": "蝴蝶"
+  },
+  "L13": {
+    "CACODE": "L13",
+    "ENAME": "Hanford",
+    "CNAME": "恆福"
+  },
+  "L17": {
+    "CACODE": "L17",
+    "ENAME": "Wu King",
+    "CNAME": "湖景"
+  },
+  "L05": {
+    "CACODE": "L05",
+    "ENAME": "Yau Oi South",
+    "CNAME": "友愛南"
+  },
+  "L14": {
+    "CACODE": "L14",
+    "ENAME": "Fu Sun",
+    "CNAME": "富新"
+  },
+  "L03": {
+    "CACODE": "L03",
+    "ENAME": "Siu Tsui",
+    "CNAME": "兆翠"
+  },
+  "L02": {
+    "CACODE": "L02",
+    "ENAME": "Siu Chi",
+    "CNAME": "兆置"
+  },
+  "L06": {
+    "CACODE": "L06",
+    "ENAME": "Yau Oi North",
+    "CNAME": "友愛北"
+  },
+  "L20": {
+    "CACODE": "L20",
+    "ENAME": "Lung Mun",
+    "CNAME": "龍門"
+  },
+  "L01": {
+    "CACODE": "L01",
+    "ENAME": "Tuen Mun Town Centre",
+    "CNAME": "屯門市中心"
+  },
+  "L07": {
+    "CACODE": "L07",
+    "ENAME": "Tsui Hing",
+    "CNAME": "翠興"
+  },
+  "L23": {
+    "CACODE": "L23",
+    "ENAME": "Tin King",
+    "CNAME": "田景"
+  },
+  "L22": {
+    "CACODE": "L22",
+    "ENAME": "Leung King",
+    "CNAME": "良景"
+  },
+  "L25": {
+    "CACODE": "L25",
+    "ENAME": "Kin Sang",
+    "CNAME": "建生"
+  },
+  "L21": {
+    "CACODE": "L21",
+    "ENAME": "San King",
+    "CNAME": "新景"
+  },
+  "L26": {
+    "CACODE": "L26",
+    "ENAME": "Siu Hong",
+    "CNAME": "兆康"
+  },
+  "L28": {
+    "CACODE": "L28",
+    "ENAME": "Fu Tai",
+    "CNAME": "富泰"
+  }
+}

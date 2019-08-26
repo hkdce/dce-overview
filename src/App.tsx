@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Menu from './Menu';
 
 import DistrictSelectPane from './DistrictSelectPane';
+import DCCAPanel from './DCCAPanel';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -20,13 +21,7 @@ const App: React.FunctionComponent = () => {
             <DistrictSelectPane/>
           </Col>
           <Col className="thinCol" md="3">
-            <Card>
-              <Card.Header>Card Title</Card.Header>
-              <Card.Body>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Body>
-            </Card>
+            <DCCAPanel/>
           </Col>
         </Row>
         <Row>
