@@ -17,7 +17,7 @@ type OwnProps = {
   visible: boolean;
   color?: string;
   highlightOnMouseOver?: boolean;
-  onFeatureClick?: (featureCACode: string) => void;
+  onFeatureClick?: (feature: google.maps.Data.Feature) => void;
 }
 
 type Props = OwnProps;
@@ -117,7 +117,7 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
 
   onClick(event: google.maps.Data.MouseEvent) {
     if (this.props.onFeatureClick) {
-      this.props.onFeatureClick(event.feature.getProperty('CACODE'));
+      this.props.onFeatureClick(event.feature);
     }
   }
 }

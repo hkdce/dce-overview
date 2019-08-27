@@ -68,7 +68,8 @@ class DistrictMap extends React.Component<Props> {
     );
   }
 
-  onFeatureClick(caCode: string) {
+  onFeatureClick(feature: google.maps.Data.Feature) {
+    const caCode = feature.getProperty('CACODE');
     this.props.dispatch(selectDCCA(caCode));
   }
 }
