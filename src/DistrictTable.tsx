@@ -28,7 +28,7 @@ const tableOptions = {
 };
 
 const DistrictTable: React.FunctionComponent<Props> = (props) => {
-  const caCodes = Object.keys(props.districtInfo);
+  const caCodes = props.districtInfo ? Object.keys(props.districtInfo) : [];
   const dccaList = caCodes
     .filter(caCode => caCode.startsWith(props.selectedDistrict))
     .flatMap(caCode => props.districtInfo[caCode]);
