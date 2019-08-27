@@ -9,8 +9,7 @@ import { DistrictFeatures, ReduxState } from './Types';
 import { selectDCCA } from './Actions';
 
 type StateProps = {
-  page: string;
-  districtFilter: string;
+  selectedDistrict: string;
   layers: DistrictFeatures;
 }
 
@@ -30,12 +29,12 @@ const getColorFromDistrictCode = (districtCode: string): string => {
 	return districtColors[colorIndex];
 }
 
-const calculateBboxOfFilteredDistrict = (layers: DistrictFeatures, districtFilter: string): BBox | null => {
+const calculateBboxOfFilteredDistrict = (layers: DistrictFeatures, selectedDistrict: string): BBox | null => {
   var bbox: GeoJSON.BBox | null = null;
   const features = Object.values(layers).flat();
   features.forEach(feature => {
     if (!feature || !feature.properties || !feature.bbox) return;
-    if (!feature.properties['CACODE'].startsWith(districtFilter)) return;
+    if (!feature.properties['CACODE'].startsWith(selectedDistrict)) return;
     if (!bbox) {
       bbox = feature.bbox;
     } else {
@@ -51,16 +50,16 @@ const calculateBboxOfFilteredDistrict = (layers: DistrictFeatures, districtFilte
 
 class DistrictMap extends React.Component<Props> {
   render() {
-    const bbox = calculateBboxOfFilteredDistrict(this.props.layers, this.props.districtFilter);
+    const bbox = calculateBboxOfFilteredDistrict(this.props.layers, this.props.selectedDistrict);
     return (
-      <GoogleMap panTo={ bbox ? [ this.props.districtFilter, bbox ] : undefined }>
+      <GoogleMap panTo={ bbox ? [ this.props.selectedDistrict, bbox ] : undefined }>
         {
           Object.keys(this.props.layers).map(districtCode =>
             <GoogleMapGeoJSONOverlay
               key={ districtCode }
               geojsons={ this.props.layers[districtCode] }
               color={ getColorFromDistrictCode(districtCode) }
-              visible={ districtCode.startsWith(this.props.districtFilter)}
+              visible={ districtCode.startsWith(this.props.selectedDistrict)}
               highlightOnMouseOver={ true }
               onFeatureClick={ this.onFeatureClick.bind(this) }/>
           )
@@ -76,8 +75,7 @@ class DistrictMap extends React.Component<Props> {
 
 const mapStateToProps = (state: ReduxState): StateProps => {
   return {
-    page: state.page,
-    districtFilter: state.district,
+    selectedDistrict: state.district,
     layers: state.page === '' ? {} : districtFeatures[state.page]
   };
 };
