@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import GoogleMap from './components/GoogleMap';
 import GoogleMapGeoJSONOverlay from './components/GoogleMapGeoJSONOverlay';
-import { districtColors, districtFeatures } from './data/Data';
-import { DistrictFeatures, ReduxState } from './Types';
+import { districtColors } from './data/Data';
+import { DistrictOverlay, ReduxState } from './Types';
 import { selectDCCA } from './Actions';
 
 type StateProps = {
   selectedDistrict: string;
-  layers: DistrictFeatures;
 }
 
 type OwnProps = {
+  districtOverlay: DistrictOverlay;
 }
 
 type DispatchProps = {
@@ -29,9 +29,9 @@ const getColorFromDistrictCode = (districtCode: string): string => {
 	return districtColors[colorIndex];
 }
 
-const calculateBboxOfFilteredDistrict = (layers: DistrictFeatures, selectedDistrict: string): BBox | null => {
+const calculateBboxOfSelectedDistrict = (overlay: DistrictOverlay, selectedDistrict: string): BBox | null => {
   var bbox: GeoJSON.BBox | null = null;
-  const features = Object.values(layers).flat();
+  const features = Object.values(overlay).flat();
   features.forEach(feature => {
     if (!feature || !feature.properties || !feature.bbox) return;
     if (!feature.properties['CACODE'].startsWith(selectedDistrict)) return;
@@ -50,14 +50,14 @@ const calculateBboxOfFilteredDistrict = (layers: DistrictFeatures, selectedDistr
 
 class DistrictMap extends React.Component<Props> {
   render() {
-    const bbox = calculateBboxOfFilteredDistrict(this.props.layers, this.props.selectedDistrict);
+    const bbox = calculateBboxOfSelectedDistrict(this.props.districtOverlay, this.props.selectedDistrict);
     return (
       <GoogleMap panTo={ bbox ? [ this.props.selectedDistrict, bbox ] : undefined }>
         {
-          Object.keys(this.props.layers).map(districtCode =>
+          Object.keys(this.props.districtOverlay).map(districtCode =>
             <GoogleMapGeoJSONOverlay
               key={ districtCode }
-              geojsons={ this.props.layers[districtCode] }
+              geojsons={ this.props.districtOverlay[districtCode] }
               color={ getColorFromDistrictCode(districtCode) }
               visible={ districtCode.startsWith(this.props.selectedDistrict)}
               highlightOnMouseOver={ true }
@@ -77,7 +77,6 @@ class DistrictMap extends React.Component<Props> {
 const mapStateToProps = (state: ReduxState): StateProps => {
   return {
     selectedDistrict: state.district,
-    layers: state.page === '' ? {} : districtFeatures[state.page]
   };
 };
 
