@@ -10,6 +10,7 @@ const tinycolor = require('tinycolor2');
 
 type State = {
   data: google.maps.Data | null;
+  selectedFeature?: google.maps.Data.Feature;
 }
 
 type OwnProps = {
@@ -18,9 +19,14 @@ type OwnProps = {
   color?: string;
   highlightOnMouseOver?: boolean;
   onFeatureClick?: (feature: google.maps.Data.Feature) => void;
+  selectedFeatureProperty?: [string, string];
 }
 
 type Props = OwnProps;
+
+const isFeatureMatching = (feature: google.maps.Data.Feature, featureProperty: [string, string]): boolean => {
+  return feature.getProperty(featureProperty[0]) === featureProperty[1];
+}
 
 class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
   static contextType = GoogleMapContext;
@@ -48,8 +54,13 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
   }
 
   componentDidUpdate(prevProps: Props) {
-    if (this.props.geojsons === prevProps.geojsons) return;
+    this.componentDidGeoJsonUpdate(prevProps);
+    this.componentDidSelectedFeatureUpdate(prevProps);
+  }
+
+  componentDidGeoJsonUpdate(prevProps: Props) {
     if (!this.state.data) return;
+    if (this.props.geojsons === prevProps.geojsons) return;
 
     const data = this.state.data;
     data.forEach(data.remove.bind(data));
@@ -57,6 +68,29 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
     this.props.geojsons.forEach(geojson => {
       data.addGeoJson(geojson);
     });
+  }
+
+  componentDidSelectedFeatureUpdate(prevProps: Props) {
+    if (!this.state.data) return;
+    if (this.props.selectedFeatureProperty === prevProps.selectedFeatureProperty) return;
+
+    const prevSelectedFeatureProperty = prevProps.selectedFeatureProperty;
+    if (prevSelectedFeatureProperty) {
+      this.state.data.forEach(f => {
+        if (isFeatureMatching(f, prevSelectedFeatureProperty)) {
+          this.changeFeatureStyle(this.state.data as google.maps.Data, f, false);
+        }
+      });
+    }
+
+    const currentSelectedFeatureProperty = this.props.selectedFeatureProperty;
+    if (currentSelectedFeatureProperty) {
+      this.state.data.forEach(f => {
+        if (isFeatureMatching(f, currentSelectedFeatureProperty)) {
+          this.changeFeatureStyle(this.state.data as google.maps.Data, f, false);
+        }
+      });
+    }
   }
 
   render() {
@@ -100,9 +134,7 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
     if (!data) return;
 
     if (this.props.highlightOnMouseOver) {
-      const orgFillColor = (data.getStyle() as google.maps.Data.StyleOptions).fillColor;
-      const fillColor = tinycolor(orgFillColor).brighten(20);
-      data.overrideStyle(event.feature, { fillColor });
+      this.changeFeatureStyle(data, event.feature, true);
     }
   }
 
@@ -111,13 +143,26 @@ class GoogleMapGeoJSONOverlay extends React.Component<Props, State> {
     if (!data) return;
 
     if (this.props.highlightOnMouseOver) {
-      data.revertStyle(event.feature);
+      this.changeFeatureStyle(data, event.feature, false);
     }
   }
 
   onClick(event: google.maps.Data.MouseEvent) {
     if (this.props.onFeatureClick) {
       this.props.onFeatureClick(event.feature);
+    }
+  }
+
+  changeFeatureStyle(data: google.maps.Data, feature: google.maps.Data.Feature, isMouseOver: boolean) {
+    const isSelectedFeature = this.props.selectedFeatureProperty ? isFeatureMatching(feature, this.props.selectedFeatureProperty) : false;
+
+    if (!isMouseOver && !isSelectedFeature) {
+      data.revertStyle(feature);
+    } else {
+      const defaultStyle = (data.getStyle() as google.maps.Data.StyleOptions);
+      const defaultFillColor = defaultStyle.fillColor;
+      const fillColor = isSelectedFeature ? tinycolor("yellow") : tinycolor(defaultFillColor).brighten(20);
+      data.overrideStyle(feature, { fillColor });
     }
   }
 }

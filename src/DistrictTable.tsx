@@ -43,7 +43,7 @@ const DistrictTable: React.FunctionComponent<Props> = (props) => {
 
   return (
     <BootstrapTable condensed={ true } data={ dccaList as object[] } options={ tableOptions } selectRow={ selectRowProp } version='4'>
-      <TableHeaderColumn isKey dataField='CACODE' dataSort={ true }>選區代號</TableHeaderColumn>
+      <TableHeaderColumn isKey dataField='CACODE' dataSort={ true }>選區編號</TableHeaderColumn>
       <TableHeaderColumn dataField='CNAME' dataSort={ true }>中文名稱</TableHeaderColumn>
       <TableHeaderColumn dataField='ENAME' dataSort={ true }>English Name</TableHeaderColumn>
     </BootstrapTable>

@@ -10,6 +10,7 @@ import { selectDCCA } from './Actions';
 
 type StateProps = {
   selectedDistrict: string;
+  selectedDCCA: string;
 }
 
 type OwnProps = {
@@ -59,8 +60,9 @@ class DistrictMap extends React.Component<Props> {
               key={ districtCode }
               geojsons={ this.props.districtOverlay[districtCode] }
               color={ getColorFromDistrictCode(districtCode) }
-              visible={ districtCode.startsWith(this.props.selectedDistrict)}
+              visible={ districtCode.startsWith(this.props.selectedDistrict) }
               highlightOnMouseOver={ true }
+              selectedFeatureProperty={ this.props.selectedDCCA.startsWith(districtCode) ? [ "CACODE", this.props.selectedDCCA ] : undefined }
               onFeatureClick={ this.onFeatureClick.bind(this) }/>
           )
         }
@@ -77,6 +79,7 @@ class DistrictMap extends React.Component<Props> {
 const mapStateToProps = (state: ReduxState): StateProps => {
   return {
     selectedDistrict: state.district,
+    selectedDCCA: state.dcca,
   };
 };
 
