@@ -18,14 +18,21 @@ type Props = StateProps & OwnProps & DispatchProps;
 
 const DCCAPanel: React.FunctionComponent<Props> = (props) => {
   if (props.selectedDcca) {
-    const selectedDccaInfo = props.districtInfo[props.selectedDcca];
+    const dccaInfo = props.districtInfo.dccaList[props.selectedDcca];
+    const candidates = props.districtInfo.candidates ? props.districtInfo.candidates[props.selectedDcca] : [];
 
     return (
       <Card>
-        <Card.Header>{ selectedDccaInfo.CACODE } - { selectedDccaInfo.CNAME } { selectedDccaInfo.ENAME }</Card.Header>
+        <Card.Header>{ dccaInfo.CACODE } - { dccaInfo.CNAME } { dccaInfo.ENAME }</Card.Header>
         <Card.Body>
-          Some quick example text to build on the card title and make up the bulk of
-          the card's content.
+          {
+            candidates.map(c =>
+            <div style={{ margin: "4px 0px 4px 0px" }}>
+              <div>{ c.name } { c.yearOfBirth ? (new Date().getFullYear() - c.yearOfBirth) + "歲" : "年齡不詳" } { c.gender }</div>
+              <div>[{ c.camp }] { c.politicalAffiliation ? c.politicalAffiliation : "政治聯繫不明" }</div>
+              <div>{ c.isUncontested ? "自動當選" : "得票: " + c.votes + " " + (c.votePercentage * 100).toFixed(1) + "%" }</div>
+            </div>)
+          }
         </Card.Body>
       </Card>
     );

@@ -30,6 +30,6 @@ export const districtOverlays: { [page: string]: DistrictOverlay } = {
 export const districtNames: DistrictNames = require('./districts_name.json');
 
 export const districtInfos: { [page: string]: DistrictInfo } = {
-  '2015': require('./dcca_2015.json'),
-  '2019': require('./dcca_2019.json')
+  '2015': { dccaList: require('./dcca_2015.json'), candidates: require('./candidates_2015.json') },
+  '2019': { dccaList: require('./dcca_2019.json') }
 };

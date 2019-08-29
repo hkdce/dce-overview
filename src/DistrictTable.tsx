@@ -28,10 +28,10 @@ const tableOptions = {
 };
 
 const DistrictTable: React.FunctionComponent<Props> = (props) => {
-  const caCodes = props.districtInfo ? Object.keys(props.districtInfo) : [];
+  const caCodes = props.districtInfo.dccaList ? Object.keys(props.districtInfo.dccaList) : [];
   const dccaList = caCodes
     .filter(caCode => caCode.startsWith(props.selectedDistrict))
-    .flatMap(caCode => props.districtInfo[caCode]);
+    .flatMap(caCode => props.districtInfo.dccaList[caCode]);
 
   const selectRowProp: SelectRow = {
     mode: 'radio' as SelectRowMode,
