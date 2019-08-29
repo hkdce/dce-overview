@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/dce-overview/static/css/main.97ff2159.chunk.css",
+    "main.js": "/dce-overview/static/js/main.bdc2c52c.chunk.js",
+    "main.js.map": "/dce-overview/static/js/main.bdc2c52c.chunk.js.map",
+    "runtime~main.js": "/dce-overview/static/js/runtime~main.2d408c6d.js",
+    "runtime~main.js.map": "/dce-overview/static/js/runtime~main.2d408c6d.js.map",
+    "static/css/2.adca5a3a.chunk.css": "/dce-overview/static/css/2.adca5a3a.chunk.css",
+    "static/js/2.c92f22ff.chunk.js": "/dce-overview/static/js/2.c92f22ff.chunk.js",
+    "static/js/2.c92f22ff.chunk.js.map": "/dce-overview/static/js/2.c92f22ff.chunk.js.map",
+    "index.html": "/dce-overview/index.html",
+    "precache-manifest.7a7109518c581294aa2cd2d911733c09.js": "/dce-overview/precache-manifest.7a7109518c581294aa2cd2d911733c09.js",
+    "service-worker.js": "/dce-overview/service-worker.js",
+    "static/css/2.adca5a3a.chunk.css.map": "/dce-overview/static/css/2.adca5a3a.chunk.css.map",
+    "static/css/main.97ff2159.chunk.css.map": "/dce-overview/static/css/main.97ff2159.chunk.css.map"
+  }
+}
